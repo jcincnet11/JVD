@@ -1,0 +1,190 @@
+{
+  "nav": {
+    "services": "Servicios",
+    "work": "Proyectos",
+    "pricing": "Precios",
+    "about": "Nosotros",
+    "contact": "Contacto"
+  },
+  "hero": {
+    "headline": "Tu negocio merece un sitio web que realmente funcione.",
+    "subheadline": "Construyo sitios web rapidos, hermosos y bilingues para negocios en Puerto Rico y marcas en crecimiento — impulsados por IA, hechos para durar.",
+    "cta_primary": "Ver nuestros servicios",
+    "cta_secondary": "Ver nuestro trabajo"
+  },
+  "trustBar": {
+    "projects": "4 Proyectos Activos",
+    "industries": "3 Industrias",
+    "bilingual": "EN + ES",
+    "deployed": "Desplegado en Vercel"
+  },
+  "services": {
+    "heading": "Lo que construimos",
+    "subheading": "Cada proyecto comienza con una conversacion. Esto es lo que podemos construir juntos.",
+    "card1": {
+      "title": "Diseno y Desarrollo Web",
+      "price": "Desde $1,200 · 7–18 dias",
+      "description": "Disenamos y construimos sitios web rapidos y modernos en Next.js — desde sitios de lanzamiento de 5 paginas hasta experiencias de marca completas con animaciones, CMS y soporte bilingue.",
+      "link": "Mas informacion →"
+    },
+    "card2": {
+      "title": "E-Commerce en Shopify",
+      "price": "Desde $1,800 · 10–14 dias",
+      "description": "Configuracion completa de tienda Shopify — productos, pagos, envios, flujos de email y un diseno que convierte visitantes en compradores.",
+      "link": "Mas informacion →"
+    },
+    "card3": {
+      "title": "Identidad de Marca",
+      "price": "Desde $900 · 7–10 dias",
+      "description": "Logo, colores, tipografia y directrices de marca — todo lo que necesitas para presentarte consistentemente en web, redes sociales e impresos.",
+      "link": "Mas informacion →"
+    },
+    "card4": {
+      "title": "Retainer Mensual",
+      "price": "Desde $350/mes",
+      "description": "Mantenimiento mensual, actualizaciones, llamadas de estrategia y nuevas funcionalidades — para que tu sitio siga creciendo despues del lanzamiento.",
+      "link": "Mas informacion →"
+    }
+  },
+  "work": {
+    "heading": "Trabajo reciente",
+    "subheading": "Cuatro proyectos activos en esports, moda de lujo, e-commerce y fragancias.",
+    "viewProject": "Ver proyecto →",
+    "projects": {
+      "imperfect": {
+        "name": "IMPerfect Gaming",
+        "industry": "Esports",
+        "description": "Organizacion de Puerto Rico compitiendo en OW2 y Marvel Rivals"
+      },
+      "emmalina": {
+        "name": "Emmalina",
+        "industry": "Moda de Lujo",
+        "description": "Marca de estilista personal para asociada de Saks/NM/Bergdorf"
+      },
+      "magenta": {
+        "name": "Magenta The Label",
+        "industry": "E-Commerce",
+        "description": "Marca de carteras artesanales en Shopify"
+      },
+      "profumo": {
+        "name": "Profumo di Vita",
+        "industry": "Fragancias",
+        "description": "Tienda bilingue de fragancias de lujo, 2 ubicaciones en PR"
+      }
+    }
+  },
+  "pricing": {
+    "heading": "Precios simples por proyecto",
+    "subheading": "Sin contratos trampa. Sin facturas sorpresa. Sabes lo que recibes antes de empezar.",
+    "mostRequested": "Mas solicitado",
+    "addons": "Extras",
+    "bundles": {
+      "launch": {
+        "name": "Sitio de Lanzamiento",
+        "price": "$1,200",
+        "timeline": "7–10 dias",
+        "features": [
+          "Hasta 5 paginas (Inicio, Nosotros, Servicios, Contacto, +1)",
+          "Diseno responsivo mobile-first",
+          "SEO basico (meta tags, sitemap)",
+          "Formulario de contacto + Google Maps",
+          "Desplegado en Vercel con dominio propio",
+          "2 rondas de revisiones"
+        ],
+        "addons": "+$300 bilingue EN/ES · +$200 blog/CMS"
+      },
+      "brand": {
+        "name": "Sitio de Marca",
+        "price": "$2,500",
+        "timeline": "14–18 dias",
+        "features": [
+          "Hasta 8 paginas con diseno personalizado por seccion",
+          "Integracion de identidad de marca",
+          "Animaciones y micro-interacciones",
+          "SEO avanzado + Google Analytics",
+          "Bilingue EN/ES incluido",
+          "CMS para contenido editable por el cliente",
+          "3 rondas de revisiones"
+        ],
+        "addons": "+$400 membresia/acceso · +$300 sistema de reservas"
+      },
+      "shopify": {
+        "name": "Tienda Shopify",
+        "price": "$1,800",
+        "timeline": "10–14 dias",
+        "features": [
+          "Construccion completa en tema aprobado de Shopify",
+          "Hasta 30 productos subidos y organizados",
+          "Pasarela de pago + configuracion de envios",
+          "Flujos de email basicos (bienvenida, carrito abandonado)",
+          "Optimizado para movil + pruebas de velocidad",
+          "2 rondas de revisiones"
+        ],
+        "addons": "+$500 tema personalizado · +$300 programa de lealtad"
+      },
+      "identity": {
+        "name": "Identidad de Marca",
+        "price": "$900",
+        "timeline": "7–10 dias",
+        "features": [
+          "Diseno de logo (3 conceptos, 2 rondas de revision)",
+          "Paleta de colores + sistema tipografico",
+          "Documento de directrices de marca (PDF)",
+          "Kit de perfiles para redes sociales",
+          "Todos los archivos en SVG, PNG, PDF"
+        ],
+        "addons": "+$400 al combinar con cualquier paquete web"
+      }
+    },
+    "retainers": {
+      "heading": "Retainers mensuales",
+      "maintenance": {
+        "name": "Mantenimiento",
+        "price": "$350/mes",
+        "description": "Actualizaciones del sitio (4 solicitudes/mes), correccion de errores, monitoreo de disponibilidad"
+      },
+      "growth": {
+        "name": "Socio de Crecimiento",
+        "price": "$700/mes",
+        "description": "Todo lo anterior + llamada de estrategia mensual + 1 nueva funcion/mes + reportes SEO"
+      },
+      "full": {
+        "name": "Socio Digital Completo",
+        "price": "$1,200/mes",
+        "description": "Todo lo anterior + actualizaciones ilimitadas + 4 assets sociales/mes + respuesta prioritaria en 4hrs"
+      }
+    }
+  },
+  "about": {
+    "heading": "Quien esta detras de esto",
+    "p1": "Soy John Vincent, disenador web y estratega digital basado en Puerto Rico. Comence a construir sitios web para negocios y organizaciones locales porque vi una brecha — grandes negocios con presencia digital debil, y agencias cobrando demasiado para arreglarlo.",
+    "p2": "Uso flujos de trabajo asistidos por IA para moverme mas rapido e inteligente que una agencia tradicional, sin sacrificar la calidad. Cada proyecto que tomo recibe mi atencion completa — no un disenador junior ni un equipo subcontratado.",
+    "p3": "Mis clientes van desde organizaciones de esports hasta estilistas de moda de lujo y minoristas de fragancias. Lo que tienen en comun: necesitaban una presencia digital que rinda, y querian a alguien que realmente entienda su negocio.",
+    "stat1": "7+ anos construyendo productos digitales",
+    "stat2": "4 proyectos activos de clientes",
+    "stat3": "Basado en Puerto Rico"
+  },
+  "contact": {
+    "heading": "Construyamos algo.",
+    "subheading": "Cuentame sobre tu proyecto y te respondere en menos de 24 horas.",
+    "name": "Nombre",
+    "email": "Correo electronico",
+    "business": "Nombre del negocio",
+    "service": "Servicio de interes",
+    "serviceOptions": {
+      "placeholder": "Selecciona un servicio",
+      "website": "Sitio Web",
+      "shopify": "Tienda Shopify",
+      "brand": "Identidad de Marca",
+      "retainer": "Retainer",
+      "notSure": "No estoy seguro/a"
+    },
+    "message": "Mensaje",
+    "submit": "Enviar mensaje →",
+    "whatsapp": "Prefieres WhatsApp? Escribeme directamente."
+  },
+  "footer": {
+    "location": "John Vincent Digital · Puerto Rico",
+    "copyright": "© 2026 · Hecho con Next.js & Vercel"
+  }
+}

@@ -1,0 +1,190 @@
+{
+  "nav": {
+    "services": "Services",
+    "work": "Work",
+    "pricing": "Pricing",
+    "about": "About",
+    "contact": "Contact"
+  },
+  "hero": {
+    "headline": "Your business deserves a website that actually works.",
+    "subheadline": "I build fast, beautiful, bilingual websites for Puerto Rico businesses and growing brands — powered by AI, built to last.",
+    "cta_primary": "See our services",
+    "cta_secondary": "View our work"
+  },
+  "trustBar": {
+    "projects": "4 Live Projects",
+    "industries": "3 Industries",
+    "bilingual": "EN + ES",
+    "deployed": "Vercel Deployed"
+  },
+  "services": {
+    "heading": "What we build",
+    "subheading": "Every project starts with a conversation. Here's what we can build together.",
+    "card1": {
+      "title": "Website Design & Development",
+      "price": "Starting at $1,200 · 7–18 days",
+      "description": "We design and build fast, modern websites on Next.js — from simple 5-page launch sites to full brand experiences with animations, CMS, and bilingual support.",
+      "link": "Learn more →"
+    },
+    "card2": {
+      "title": "Shopify E-Commerce",
+      "price": "Starting at $1,800 · 10–14 days",
+      "description": "Full Shopify store setup — products, payments, shipping, email flows, and a design that converts browsers into buyers.",
+      "link": "Learn more →"
+    },
+    "card3": {
+      "title": "Brand Identity",
+      "price": "Starting at $900 · 7–10 days",
+      "description": "Logo, colors, typography, and brand guidelines — everything you need to show up consistently across web, social, and print.",
+      "link": "Learn more →"
+    },
+    "card4": {
+      "title": "Ongoing Retainer",
+      "price": "From $350/mo",
+      "description": "Monthly maintenance, updates, strategy calls, and new features — so your site keeps growing after launch.",
+      "link": "Learn more →"
+    }
+  },
+  "work": {
+    "heading": "Recent work",
+    "subheading": "Four live projects across esports, luxury fashion, e-commerce, and fragrance.",
+    "viewProject": "View project →",
+    "projects": {
+      "imperfect": {
+        "name": "IMPerfect Gaming",
+        "industry": "Esports",
+        "description": "Puerto Rico org competing in OW2 & Marvel Rivals"
+      },
+      "emmalina": {
+        "name": "Emmalina",
+        "industry": "Luxury Fashion",
+        "description": "Personal stylist brand for a Saks/NM/Bergdorf associate"
+      },
+      "magenta": {
+        "name": "Magenta The Label",
+        "industry": "E-Commerce",
+        "description": "Handcrafted handbag brand on Shopify"
+      },
+      "profumo": {
+        "name": "Profumo di Vita",
+        "industry": "Fragrance Retail",
+        "description": "Bilingual luxury fragrance store, 2 PR locations"
+      }
+    }
+  },
+  "pricing": {
+    "heading": "Simple, project-based pricing",
+    "subheading": "No retainer traps. No surprise invoices. You know what you're getting before we start.",
+    "mostRequested": "Most requested",
+    "addons": "Add-ons",
+    "bundles": {
+      "launch": {
+        "name": "Launch Site",
+        "price": "$1,200",
+        "timeline": "7–10 days",
+        "features": [
+          "Up to 5 pages (Home, About, Services, Contact, +1)",
+          "Mobile-first responsive design",
+          "Basic SEO setup (meta tags, sitemap)",
+          "Contact form + Google Maps embed",
+          "Deployed to Vercel with custom domain",
+          "2 rounds of revisions"
+        ],
+        "addons": "+$300 bilingual EN/ES · +$200 blog/CMS"
+      },
+      "brand": {
+        "name": "Brand Site",
+        "price": "$2,500",
+        "timeline": "14–18 days",
+        "features": [
+          "Up to 8 pages with custom layout per section",
+          "Brand identity integration",
+          "Animations & micro-interactions",
+          "Advanced SEO + Google Analytics",
+          "Bilingual EN/ES included",
+          "CMS for client-editable content",
+          "3 rounds of revisions"
+        ],
+        "addons": "+$400 membership/gating · +$300 booking system"
+      },
+      "shopify": {
+        "name": "Shopify Store",
+        "price": "$1,800",
+        "timeline": "10–14 days",
+        "features": [
+          "Full Shopify build on approved theme",
+          "Up to 30 products uploaded & organized",
+          "Payment gateway + shipping setup",
+          "Basic email flows (welcome, abandoned cart)",
+          "Mobile optimized + speed tested",
+          "2 rounds of revisions"
+        ],
+        "addons": "+$500 custom theme · +$300 loyalty program"
+      },
+      "identity": {
+        "name": "Brand Identity",
+        "price": "$900",
+        "timeline": "7–10 days",
+        "features": [
+          "Logo design (3 concepts, 2 revision rounds)",
+          "Color palette + typography system",
+          "Brand guidelines document (PDF)",
+          "Social media profile kit",
+          "All files in SVG, PNG, PDF"
+        ],
+        "addons": "+$400 if bundled with any website package"
+      }
+    },
+    "retainers": {
+      "heading": "Monthly retainers",
+      "maintenance": {
+        "name": "Maintenance",
+        "price": "$350/mo",
+        "description": "Site updates (4 requests/mo), bug fixes, uptime monitoring"
+      },
+      "growth": {
+        "name": "Growth Partner",
+        "price": "$700/mo",
+        "description": "Everything above + monthly strategy call + 1 new feature/mo + SEO reporting"
+      },
+      "full": {
+        "name": "Full Digital Partner",
+        "price": "$1,200/mo",
+        "description": "Everything above + unlimited updates + 4 social assets/mo + priority 4hr response"
+      }
+    }
+  },
+  "about": {
+    "heading": "Who's behind this",
+    "p1": "I'm John Vincent, a web designer and digital strategist based in Puerto Rico. I started building websites for local businesses and organizations because I saw a gap — great businesses with weak digital presence, and agencies charging way too much to fix it.",
+    "p2": "I use AI-assisted workflows to move faster and smarter than a traditional agency, without cutting corners on quality. Every project I take on gets my full attention — not a junior designer or an outsourced team.",
+    "p3": "My clients range from esports organizations to luxury fashion stylists to fragrance retailers. What they have in common: they needed a digital presence that performs, and they wanted someone who actually gets their business.",
+    "stat1": "7+ years building digital products",
+    "stat2": "4 live client projects",
+    "stat3": "Based in Puerto Rico"
+  },
+  "contact": {
+    "heading": "Let's build something.",
+    "subheading": "Tell me about your project and I'll get back to you within 24 hours.",
+    "name": "Name",
+    "email": "Email",
+    "business": "Business name",
+    "service": "Service interest",
+    "serviceOptions": {
+      "placeholder": "Select a service",
+      "website": "Website",
+      "shopify": "Shopify Store",
+      "brand": "Brand Identity",
+      "retainer": "Retainer",
+      "notSure": "Not sure yet"
+    },
+    "message": "Message",
+    "submit": "Send message →",
+    "whatsapp": "Prefer WhatsApp? Message me directly."
+  },
+  "footer": {
+    "location": "John Vincent Digital · Puerto Rico",
+    "copyright": "© 2026 · Built with Next.js & Vercel"
+  }
+}
