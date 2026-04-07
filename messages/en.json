@@ -13,10 +13,10 @@
     "cta_secondary": "View our work"
   },
   "trustBar": {
-    "projects": "4 Live Projects",
-    "industries": "3 Industries",
-    "bilingual": "EN + ES",
-    "deployed": "Vercel Deployed"
+    "delivery": "100% On-Time Delivery",
+    "industries": "4 Industries Served",
+    "bilingual": "Bilingual EN + ES",
+    "ai": "AI-Powered Workflows"
   },
   "services": {
     "heading": "What we build",
@@ -54,104 +54,79 @@
       "imperfect": {
         "name": "IMPerfect Gaming",
         "industry": "Esports",
-        "description": "Puerto Rico org competing in OW2 & Marvel Rivals"
+        "description": "Puerto Rico org competing in OW2 & Marvel Rivals",
+        "challengeLabel": "The challenge",
+        "challenge": "Building a bilingual org management system that could handle roster moves, scrim scheduling, and team announcements — all without requiring the coaching staff to touch the codebase. The solution was a role-based Team Hub with scoped permissions for Admin, Coach, and Manager roles."
       },
       "emmalina": {
         "name": "Emmalina",
         "industry": "Luxury Fashion",
-        "description": "Personal stylist brand for a Saks/NM/Bergdorf associate"
+        "description": "Personal stylist brand for a Saks/NM/Bergdorf associate",
+        "challengeLabel": "The challenge",
+        "challenge": "The client needed to convert casual site visitors into private styling clients, while simultaneously driving affiliate sales through Saks, Neiman Marcus, and Bergdorf Goodman. We restructured the site around her personal brand first, with affiliate commerce as a secondary layer — not the other way around."
       },
       "magenta": {
         "name": "Magenta The Label",
         "industry": "E-Commerce",
-        "description": "Handcrafted handbag brand on Shopify"
+        "description": "Handcrafted handbag brand on Shopify",
+        "challengeLabel": "The challenge",
+        "challenge": "Launching a Shopify store for a handcrafted product brand where every item is one-of-a-kind created a unique inventory problem — standard e-commerce flows assume repeatable SKUs. We built a custom product structure that communicated scarcity as a feature, not a limitation, which directly improved conversion."
       },
       "profumo": {
         "name": "Profumo di Vita",
         "industry": "Fragrance Retail",
-        "description": "Bilingual luxury fragrance store, 2 PR locations"
+        "description": "Bilingual luxury fragrance store, 2 PR locations",
+        "challengeLabel": "The challenge",
+        "challenge": "Operating as a fully bilingual EN/ES store with two physical Puerto Rico locations meant every piece of content — product descriptions, membership tier details, store hours, promotional copy — had to be maintained in parallel without creating double the workload. We implemented a translation management system that kept both languages in sync with a single content update."
       }
     }
   },
   "pricing": {
-    "heading": "Simple, project-based pricing",
-    "subheading": "No retainer traps. No surprise invoices. You know what you're getting before we start.",
-    "mostRequested": "Most requested",
-    "addons": "Add-ons",
+    "heading": "How we work",
+    "subheading": "Every project is scoped to your goals — not a one-size-fits-all template. Here's what each engagement covers.",
+    "coveredLabel": "What's covered",
+    "ctaQuestion": "Not sure which is right for you?",
+    "ctaButton": "Start with a free call →",
     "bundles": {
       "launch": {
-        "name": "Launch Site",
-        "price": "$1,200",
-        "timeline": "7–10 days",
-        "features": [
-          "Up to 5 pages (Home, About, Services, Contact, +1)",
-          "Mobile-first responsive design",
-          "Basic SEO setup (meta tags, sitemap)",
-          "Contact form + Google Maps embed",
-          "Deployed to Vercel with custom domain",
-          "2 rounds of revisions"
-        ],
-        "addons": "+$300 bilingual EN/ES · +$200 blog/CMS"
-      },
-      "brand": {
-        "name": "Brand Site",
-        "price": "$2,500",
-        "timeline": "14–18 days",
-        "features": [
-          "Up to 8 pages with custom layout per section",
-          "Brand identity integration",
-          "Animations & micro-interactions",
-          "Advanced SEO + Google Analytics",
-          "Bilingual EN/ES included",
-          "CMS for client-editable content",
-          "3 rounds of revisions"
-        ],
-        "addons": "+$400 membership/gating · +$300 booking system"
+        "name": "Website Design & Development",
+        "outcome": "For businesses that need a professional online presence that actually converts visitors into leads. We handle everything from strategy and design to development and deployment — so you get a site that works, not just one that looks good.",
+        "covered": [
+          "Custom design tailored to your brand",
+          "Mobile-first, fast-loading build on Next.js",
+          "SEO foundation and analytics setup",
+          "Deployed to Vercel with your custom domain"
+        ]
       },
       "shopify": {
-        "name": "Shopify Store",
-        "price": "$1,800",
-        "timeline": "10–14 days",
-        "features": [
-          "Full Shopify build on approved theme",
-          "Up to 30 products uploaded & organized",
-          "Payment gateway + shipping setup",
-          "Basic email flows (welcome, abandoned cart)",
-          "Mobile optimized + speed tested",
-          "2 rounds of revisions"
-        ],
-        "addons": "+$500 custom theme · +$300 loyalty program"
+        "name": "Shopify E-Commerce",
+        "outcome": "For brands ready to sell online without the technical headaches. We set up your full store — products, payments, shipping, and the emails that bring customers back — so you can focus on what you make, not how to sell it.",
+        "covered": [
+          "Complete Shopify store build and configuration",
+          "Product catalog setup and collection organization",
+          "Payment gateway, shipping zones, and tax setup",
+          "Automated email flows for welcome and abandoned cart"
+        ]
       },
       "identity": {
         "name": "Brand Identity",
-        "price": "$900",
-        "timeline": "7–10 days",
-        "features": [
-          "Logo design (3 concepts, 2 revision rounds)",
-          "Color palette + typography system",
-          "Brand guidelines document (PDF)",
-          "Social media profile kit",
-          "All files in SVG, PNG, PDF"
-        ],
-        "addons": "+$400 if bundled with any website package"
-      }
-    },
-    "retainers": {
-      "heading": "Monthly retainers",
-      "maintenance": {
-        "name": "Maintenance",
-        "price": "$350/mo",
-        "description": "Site updates (4 requests/mo), bug fixes, uptime monitoring"
+        "outcome": "For businesses that need to look the part before they build the site. We create a visual identity system — logo, colors, typography, and guidelines — that works consistently across every touchpoint your customers will see.",
+        "covered": [
+          "Logo design with multiple concepts and revisions",
+          "Color palette and typography system",
+          "Brand guidelines document",
+          "Social media profile kit ready to use"
+        ]
       },
-      "growth": {
-        "name": "Growth Partner",
-        "price": "$700/mo",
-        "description": "Everything above + monthly strategy call + 1 new feature/mo + SEO reporting"
-      },
-      "full": {
-        "name": "Full Digital Partner",
-        "price": "$1,200/mo",
-        "description": "Everything above + unlimited updates + 4 social assets/mo + priority 4hr response"
+      "retainer": {
+        "name": "Ongoing Retainer",
+        "outcome": "For clients who want a long-term digital partner, not just a one-time vendor. We stay on as your dedicated team — handling updates, adding features, and making sure your site keeps growing alongside your business.",
+        "covered": [
+          "Monthly site updates and content changes",
+          "Performance monitoring and bug fixes",
+          "Strategy check-ins to prioritize what's next",
+          "Priority response time for urgent requests"
+        ]
       }
     }
   },

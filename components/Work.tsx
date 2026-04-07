@@ -40,6 +40,14 @@ export default function Work() {
                   <p className="mt-2 text-warm-gray">
                     {t(`projects.${project.key}.description`)}
                   </p>
+                  <div className="mt-4 pt-4 border-t border-border">
+                    <p className="text-xs font-medium text-accent/70 uppercase tracking-wide mb-1.5">
+                      {t(`projects.${project.key}.challengeLabel`)}
+                    </p>
+                    <p className="text-sm text-warm-gray leading-relaxed">
+                      {t(`projects.${project.key}.challenge`)}
+                    </p>
+                  </div>
                   <a
                     href="#"
                     className="inline-block mt-4 text-accent font-medium hover:text-accent-dark transition-colors focus:outline-none focus:ring-2 focus:ring-accent rounded"
