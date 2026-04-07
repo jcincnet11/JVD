@@ -23,25 +23,25 @@
     "subheading": "Cada proyecto comienza con una conversacion. Esto es lo que podemos construir juntos.",
     "card1": {
       "title": "Diseno y Desarrollo Web",
-      "price": "Desde $1,200 · 7–18 dias",
+
       "description": "Disenamos y construimos sitios web rapidos y modernos en Next.js — desde sitios de lanzamiento de 5 paginas hasta experiencias de marca completas con animaciones, CMS y soporte bilingue.",
       "link": "Mas informacion →"
     },
     "card2": {
       "title": "E-Commerce en Shopify",
-      "price": "Desde $1,800 · 10–14 dias",
+
       "description": "Configuracion completa de tienda Shopify — productos, pagos, envios, flujos de email y un diseno que convierte visitantes en compradores.",
       "link": "Mas informacion →"
     },
     "card3": {
       "title": "Identidad de Marca",
-      "price": "Desde $900 · 7–10 dias",
+
       "description": "Logo, colores, tipografia y directrices de marca — todo lo que necesitas para presentarte consistentemente en web, redes sociales e impresos.",
       "link": "Mas informacion →"
     },
     "card4": {
       "title": "Retainer Mensual",
-      "price": "Desde $350/mes",
+
       "description": "Mantenimiento mensual, actualizaciones, llamadas de estrategia y nuevas funcionalidades — para que tu sitio siga creciendo despues del lanzamiento.",
       "link": "Mas informacion →"
     }

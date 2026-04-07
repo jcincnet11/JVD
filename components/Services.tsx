@@ -22,7 +22,6 @@ export default function Services() {
   const cards = [1, 2, 3, 4].map((i) => ({
     icon: icons[i - 1],
     title: t(`card${i}.title`),
-    price: t(`card${i}.price`),
     description: t(`card${i}.description`),
     link: t(`card${i}.link`),
   }));
@@ -47,7 +46,6 @@ export default function Services() {
               <div className="bg-white border border-border rounded-xl p-8 hover:border-accent hover:-translate-y-0.5 transition-all duration-300 h-full">
                 <div className="mb-4">{card.icon}</div>
                 <h3 className="font-serif text-xl font-bold text-charcoal">{card.title}</h3>
-                <p className="text-sm text-accent font-medium mt-1">{card.price}</p>
                 <p className="mt-3 text-warm-gray leading-relaxed">{card.description}</p>
                 <a
                   href="#pricing"

@@ -23,25 +23,25 @@
     "subheading": "Every project starts with a conversation. Here's what we can build together.",
     "card1": {
       "title": "Website Design & Development",
-      "price": "Starting at $1,200 · 7–18 days",
+
       "description": "We design and build fast, modern websites on Next.js — from simple 5-page launch sites to full brand experiences with animations, CMS, and bilingual support.",
       "link": "Learn more →"
     },
     "card2": {
       "title": "Shopify E-Commerce",
-      "price": "Starting at $1,800 · 10–14 days",
+
       "description": "Full Shopify store setup — products, payments, shipping, email flows, and a design that converts browsers into buyers.",
       "link": "Learn more →"
     },
     "card3": {
       "title": "Brand Identity",
-      "price": "Starting at $900 · 7–10 days",
+
       "description": "Logo, colors, typography, and brand guidelines — everything you need to show up consistently across web, social, and print.",
       "link": "Learn more →"
     },
     "card4": {
       "title": "Ongoing Retainer",
-      "price": "From $350/mo",
+
       "description": "Monthly maintenance, updates, strategy calls, and new features — so your site keeps growing after launch.",
       "link": "Learn more →"
     }
