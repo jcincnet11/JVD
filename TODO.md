@@ -2,20 +2,15 @@
 
 ## Priority: High
 
-- [x] Replace mailto contact form with Formspree backend
-- [x] Set up Vercel Analytics
 - [ ] Add image assets — favicon, apple-touch-icon, and OG images to `/public`
 
 ## Priority: Medium
 
-- [ ] Add loading states and error boundaries for client components
 - [ ] Consider adding a lightweight CMS (Sanity, Contentlayer) for project cards so client can update without code changes
 
 ## Priority: Lower
 
 - [ ] Set up Vitest or Jest for component testing — at minimum test translation key coverage between en.json and es.json
-- [ ] Add GitHub Actions CI pipeline — lint + typecheck + build on PRs
-- [ ] Add performance monitoring (Vercel Speed Insights or Lighthouse CI)
 
 ## Done
 
@@ -28,3 +23,8 @@
 - [x] Add skip-to-content link for keyboard navigation accessibility
 - [x] Add real project URLs to "View project" links in Work section
 - [x] Add WhatsApp link to contact section
+- [x] Replace mailto contact form with Formspree backend
+- [x] Set up Vercel Analytics
+- [x] Add Vercel Speed Insights for performance monitoring
+- [x] Add error boundary for runtime error handling
+- [x] Add GitHub Actions CI pipeline — lint + typecheck + build on PRs
