@@ -3,7 +3,7 @@
 ## Priority: High
 
 - [x] Replace mailto contact form with Formspree backend
-- [ ] Set up basic analytics (Vercel Analytics or Google Analytics) to track visitor behavior
+- [x] Set up Vercel Analytics
 - [ ] Add image assets — favicon, apple-touch-icon, and OG images to `/public`
 
 ## Priority: Medium
