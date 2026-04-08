@@ -22,7 +22,7 @@ export default function Contact() {
     setStatus('submitting');
 
     try {
-      const res = await fetch('https://formspree.io/f/iamjohnvdiaz@gmail.com', {
+      const res = await fetch('https://formspree.io/f/johnvincentdigital@gmail.com', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
         body: JSON.stringify({
