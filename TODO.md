@@ -2,7 +2,7 @@
 
 ## Priority: High
 
-- [ ] Replace mailto contact form with a proper form backend (Formspree, Resend, or Vercel serverless function) for reliability and tracking
+- [x] Replace mailto contact form with Formspree backend
 - [ ] Set up basic analytics (Vercel Analytics or Google Analytics) to track visitor behavior
 - [ ] Add image assets — favicon, apple-touch-icon, and OG images to `/public`
 

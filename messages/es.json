@@ -156,6 +156,11 @@
     },
     "message": "Mensaje",
     "submit": "Enviar mensaje →",
+    "sending": "Enviando...",
+    "successHeading": "Mensaje enviado!",
+    "successMessage": "Gracias por escribir. Te respondere en menos de 24 horas.",
+    "sendAnother": "Enviar otro mensaje",
+    "errorMessage": "Algo salio mal. Intenta de nuevo o escribeme por WhatsApp.",
     "whatsapp": "Prefieres WhatsApp? Escribeme directamente."
   },
   "notFound": {

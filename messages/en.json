@@ -156,6 +156,11 @@
     },
     "message": "Message",
     "submit": "Send message →",
+    "sending": "Sending...",
+    "successHeading": "Message sent!",
+    "successMessage": "Thanks for reaching out. I'll get back to you within 24 hours.",
+    "sendAnother": "Send another message",
+    "errorMessage": "Something went wrong. Please try again or message me on WhatsApp.",
     "whatsapp": "Prefer WhatsApp? Message me directly."
   },
   "notFound": {
