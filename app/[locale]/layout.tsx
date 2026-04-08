@@ -21,11 +21,55 @@ const jakarta = Plus_Jakarta_Sans({
 
 const locales = ['en', 'es'];
 
-export const metadata: Metadata = {
-  title: 'John Vincent Digital — Web Design & Brand Strategy',
-  description:
-    'AI-powered web design, e-commerce, and brand strategy for Puerto Rico businesses and growing brands.',
+const siteUrl = 'https://john-vincent-digital.vercel.app';
+
+const meta: Record<string, { title: string; description: string }> = {
+  en: {
+    title: 'John Vincent Digital — Web Design & Brand Strategy',
+    description:
+      'AI-powered web design, e-commerce, and brand strategy for Puerto Rico businesses and growing brands.',
+  },
+  es: {
+    title: 'John Vincent Digital — Diseño Web y Estrategia de Marca',
+    description:
+      'Diseño web impulsado por IA, e-commerce y estrategia de marca para negocios en Puerto Rico y marcas en crecimiento.',
+  },
 };
+
+export async function generateMetadata({
+  params,
+}: {
+  params: { locale: string };
+}): Promise<Metadata> {
+  const { locale } = params;
+  const t = meta[locale] ?? meta.en;
+  const ogLocale = locale === 'es' ? 'es_ES' : 'en_US';
+
+  return {
+    title: t.title,
+    description: t.description,
+    openGraph: {
+      title: t.title,
+      description: t.description,
+      type: 'website',
+      locale: ogLocale,
+      siteName: 'John Vincent Digital',
+      url: `${siteUrl}/${locale}`,
+    },
+    twitter: {
+      card: 'summary_large_image',
+      title: t.title,
+      description: t.description,
+    },
+    alternates: {
+      canonical: `${siteUrl}/${locale}`,
+      languages: {
+        en: `${siteUrl}/en`,
+        es: `${siteUrl}/es`,
+      },
+    },
+  };
+}
 
 export default async function LocaleLayout({
   children,
@@ -39,9 +83,31 @@ export default async function LocaleLayout({
 
   const messages = await getMessages();
 
+  const t = meta[locale] ?? meta.en;
+  const jsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'ProfessionalService',
+    name: 'John Vincent Digital',
+    description: t.description,
+    url: siteUrl,
+    email: 'iamjohnvdiaz@gmail.com',
+    areaServed: 'Puerto Rico',
+    serviceType: [
+      'Web Design',
+      'E-Commerce Development',
+      'Brand Identity',
+      'Digital Strategy',
+    ],
+    knowsLanguage: ['en', 'es'],
+  };
+
   return (
     <html lang={locale} className={`${fraunces.variable} ${jakarta.variable}`}>
       <body className="font-sans bg-cream text-charcoal antialiased">
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        />
         <NextIntlClientProvider messages={messages}>
           {children}
         </NextIntlClientProvider>

@@ -158,6 +158,11 @@
     "submit": "Send message →",
     "whatsapp": "Prefer WhatsApp? Message me directly."
   },
+  "notFound": {
+    "heading": "Page not found",
+    "description": "The page you're looking for doesn't exist or has been moved.",
+    "backHome": "Back to home"
+  },
   "footer": {
     "location": "John Vincent Digital · Puerto Rico",
     "copyright": "© 2026 · Built with Next.js & Vercel"

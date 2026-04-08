@@ -2,18 +2,30 @@
 
 Professional service website for John Vincent Digital — an AI-powered web design studio based in Puerto Rico.
 
-## Getting Started
+## Commands
+
+All operations go through the Makefile. Run `make help` for the full list.
+
+### Development
 
 ```bash
-npm install
-npm run dev
+make run              # Start dev server
+make build            # Build for production
+make start            # Start production server locally
+make lint             # Run Next.js linter
+make typecheck        # Run TypeScript type checking
+make deps             # Install dependencies
+make clean            # Remove build artifacts
 ```
 
-Open [http://localhost:3000](http://localhost:3000).
+### Deployment
 
-## Deployment
-
-Push to GitHub and connect to [Vercel](https://vercel.com). No environment variables required.
+```bash
+make deploy           # Deploy to Vercel production
+make deploy-preview   # Deploy a Vercel preview
+make logs             # View Vercel deployment logs
+make status           # Show git and Vercel project status
+```
 
 ## How to Update
 
@@ -29,12 +41,12 @@ Edit `components/Contact.tsx` — change the `mailto:` address in the `handleSub
 
 1. Add a new card entry in `messages/en.json` and `messages/es.json` under `services`
 2. Add the corresponding icon and card in `components/Services.tsx`
-3. Add pricing details under `pricing.bundles` in both message files
+3. Add engagement details under `pricing.bundles` in both message files
 4. Update `components/Pricing.tsx` to include the new bundle key
 
 ### Translations
 
-All translatable text lives in `messages/en.json` and `messages/es.json`. Edit these files to update any copy on the site.
+All translatable text lives in `messages/en.json` and `messages/es.json`. Edit these files to update any copy on the site. See `docs/i18n.md` for details.
 
 ## Tech Stack
 
