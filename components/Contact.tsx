@@ -120,7 +120,7 @@ export default function Contact() {
             </button>
 
             <p className="text-center text-cream/50 text-sm">
-              <a href="#" className="underline hover:text-cream transition-colors">
+              <a href="https://wa.me/17877174203" target="_blank" rel="noopener noreferrer" className="underline hover:text-cream transition-colors">
                 {t('whatsapp')}
               </a>
             </p>

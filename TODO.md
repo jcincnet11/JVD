@@ -2,9 +2,7 @@
 
 ## Priority: High
 
-- [ ] Add real project URLs to "View project" links in Work section (currently `href="#"`)
 - [ ] Replace mailto contact form with a proper form backend (Formspree, Resend, or Vercel serverless function) for reliability and tracking
-- [ ] Add WhatsApp link to contact section (currently placeholder `href="#"`)
 - [ ] Set up basic analytics (Vercel Analytics or Google Analytics) to track visitor behavior
 - [ ] Add image assets — favicon, apple-touch-icon, and OG images to `/public`
 
@@ -28,3 +26,5 @@
 - [x] Upgrade Next.js from 14.2.15 to 14.2.35 (security fix)
 - [x] Implement `prefers-reduced-motion` to disable ScrollReveal animations for accessibility
 - [x] Add skip-to-content link for keyboard navigation accessibility
+- [x] Add real project URLs to "View project" links in Work section
+- [x] Add WhatsApp link to contact section

@@ -2,10 +2,10 @@ import { useTranslations } from 'next-intl';
 import ScrollReveal from './ScrollReveal';
 
 const projects = [
-  { key: 'imperfect', color: '#C8E400' },
-  { key: 'emmalina', color: '#C9A96E' },
-  { key: 'magenta', color: '#C4587A' },
-  { key: 'profumo', color: '#8B6F47' },
+  { key: 'imperfect', color: '#C8E400', url: 'https://imperfect-sage.vercel.app' },
+  { key: 'emmalina', color: '#C9A96E', url: 'https://emmalina-brand.vercel.app' },
+  { key: 'magenta', color: '#C4587A', url: 'https://magentathelabel.vercel.app' },
+  { key: 'profumo', color: '#8B6F47', url: 'https://v0-perfume-store-clone-eight.vercel.app' },
 ];
 
 export default function Work() {
@@ -49,7 +49,9 @@ export default function Work() {
                     </p>
                   </div>
                   <a
-                    href="#"
+                    href={project.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="inline-block mt-4 text-accent font-medium hover:text-accent-dark transition-colors focus:outline-none focus:ring-2 focus:ring-accent rounded"
                   >
                     {t('viewProject')}
