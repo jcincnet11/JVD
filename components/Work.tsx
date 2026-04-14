@@ -2,7 +2,7 @@ import { useTranslations } from 'next-intl';
 import ScrollReveal from './ScrollReveal';
 
 const projects = [
-  { key: 'imperfect', color: '#C8E400', url: 'https://imperfect-sage.vercel.app' },
+  { key: 'imperfect', color: '#C8E400', url: 'https://imperfectgg.com/en' },
   { key: 'emmalina', color: '#C9A96E', url: 'https://emmalina-brand.vercel.app' },
   { key: 'magenta', color: '#C4587A', url: 'https://magentathelabel.vercel.app' },
   { key: 'profumo', color: '#8B6F47', url: 'https://v0-perfume-store-clone-eight.vercel.app' },
