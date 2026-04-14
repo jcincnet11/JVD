@@ -28,8 +28,8 @@ typecheck: ## Run TypeScript type checking
 # ─── Testing ──────────────────────────────────────────────────
 
 .PHONY: test
-test: ## Run tests (not yet configured)
-	@echo "No test framework configured. See TODO.md."
+test: ## Run tests
+	npm test
 
 # ─── Deployment ───────────────────────────────────────────────
 

@@ -1,17 +1,5 @@
 # TODO
 
-## Priority: High
-
-- [ ] Add image assets — favicon, apple-touch-icon, and OG images to `/public`
-
-## Priority: Medium
-
-- [ ] Consider adding a lightweight CMS (Sanity, Contentlayer) for project cards so client can update without code changes
-
-## Priority: Lower
-
-- [ ] Set up Vitest or Jest for component testing — at minimum test translation key coverage between en.json and es.json
-
 ## Done
 
 - [x] Add `<meta>` OG tags and social preview images for link sharing (og:title, og:description per locale)
@@ -28,3 +16,6 @@
 - [x] Add Vercel Speed Insights for performance monitoring
 - [x] Add error boundary for runtime error handling
 - [x] Add GitHub Actions CI pipeline — lint + typecheck + build on PRs
+- [x] Add favicon (SVG), apple-touch-icon, and dynamic OG images per locale
+- [x] Evaluate CMS for project cards — decided against (4 cards, rarely changes, current JSON setup is clean)
+- [x] Set up Vitest with translation key coverage tests (5 tests: key parity, empty values, missing/extra keys)
