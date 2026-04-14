@@ -3,7 +3,7 @@ import { useTranslations } from 'next-intl';
 export default function TrustBar() {
   const t = useTranslations('trustBar');
 
-  const items = [t('delivery'), t('industries'), t('bilingual'), t('ai')];
+  const items = [t('delivery'), t('industries'), t('bilingual'), t('ai'), t('local')];
 
   return (
     <section className="bg-cream border-y border-border">

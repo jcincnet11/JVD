@@ -2,6 +2,7 @@
   "nav": {
     "services": "Services",
     "work": "Work",
+    "local": "Local",
     "pricing": "Pricing",
     "about": "About",
     "contact": "Contact"
@@ -16,7 +17,8 @@
     "delivery": "100% On-Time Delivery",
     "industries": "4 Industries Served",
     "bilingual": "Bilingual EN + ES",
-    "ai": "AI-Powered Workflows"
+    "ai": "AI-Powered Workflows",
+    "local": "5+ Local PR Businesses"
   },
   "services": {
     "heading": "What we build",
@@ -88,6 +90,18 @@
     "ctaQuestion": "Not sure which is right for you?",
     "ctaButton": "Start with a free call →",
     "bundles": {
+      "localPresence": {
+        "name": "Local Presence Package",
+        "badge": "Best for local businesses",
+        "outcome": "From invisible to unforgettable — in under 2 weeks. For local Puerto Rico businesses that need a real digital foundation. We start with what matters most — Google, your online presence, and a system to bring customers back.",
+        "covered": [
+          "Google Business Profile setup and optimization",
+          "Mobile-friendly landing page",
+          "Instagram profile and content system",
+          "WhatsApp integration and booking link",
+          "30-day check-in after launch"
+        ]
+      },
       "launch": {
         "name": "Website Design & Development",
         "outcome": "For businesses that need a professional online presence that actually converts visitors into leads. We handle everything from strategy and design to development and deployment — so you get a site that works, not just one that looks good.",
@@ -152,6 +166,7 @@
       "shopify": "Shopify Store",
       "brand": "Brand Identity",
       "retainer": "Retainer",
+      "localPresence": "Local Presence Package",
       "notSure": "Not sure yet"
     },
     "message": "Message",
@@ -167,6 +182,40 @@
     "heading": "Page not found",
     "description": "The page you're looking for doesn't exist or has been moved.",
     "backHome": "Back to home"
+  },
+  "local": {
+    "label": "FOR LOCAL BUSINESSES IN PUERTO RICO",
+    "heading": "Most local businesses in PR have no website. You're already ahead.",
+    "subheading": "We work with bars, barbershops, boutiques, food trucks, and salons — not just tech brands. If your business runs on word of mouth and WhatsApp, we know exactly what you need.",
+    "venues": {
+      "bar": {
+        "icon": "\ud83c\udf7a",
+        "name": "Bar / Lounge",
+        "description": "Food partner page, QR table menus, Google listing, Instagram system"
+      },
+      "barbershop": {
+        "icon": "\u2702\ufe0f",
+        "name": "Barbershop / Salon",
+        "description": "Online booking, review funnel, loyalty card, Google profile"
+      },
+      "beauty": {
+        "icon": "\ud83d\udc85",
+        "name": "Nail Salon / Beauty",
+        "description": "Booking page, portfolio Instagram, seasonal promotion templates"
+      },
+      "foodtruck": {
+        "icon": "\ud83d\ude9a",
+        "name": "Food Truck / Pop-Up",
+        "description": "Live location page, WhatsApp broadcast list, pre-order form"
+      },
+      "boutique": {
+        "icon": "\ud83d\udc57",
+        "name": "Local Boutique",
+        "description": "Link-in-bio shop, email capture, abandoned cart flow"
+      }
+    },
+    "cta": "Every local business gets a custom plan — not a template.",
+    "ctaButton": "Get your free plan \u2192"
   },
   "footer": {
     "location": "John Vincent Digital · Puerto Rico",

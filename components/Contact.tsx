@@ -134,6 +134,7 @@ export default function Contact() {
                   <option value="shopify" className="text-charcoal">{t('serviceOptions.shopify')}</option>
                   <option value="brand" className="text-charcoal">{t('serviceOptions.brand')}</option>
                   <option value="retainer" className="text-charcoal">{t('serviceOptions.retainer')}</option>
+                  <option value="local-presence" className="text-charcoal">{t('serviceOptions.localPresence')}</option>
                   <option value="not-sure" className="text-charcoal">{t('serviceOptions.notSure')}</option>
                 </select>
               </div>

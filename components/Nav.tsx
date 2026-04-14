@@ -4,7 +4,7 @@ import { useState, useEffect } from 'react';
 import { useTranslations } from 'next-intl';
 import { useLocale } from 'next-intl';
 
-const sections = ['services', 'work', 'pricing', 'about', 'contact'];
+const sections = ['services', 'work', 'local', 'pricing', 'about', 'contact'];
 
 export default function Nav() {
   const t = useTranslations('nav');

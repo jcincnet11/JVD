@@ -3,6 +3,7 @@ import Hero from '@/components/Hero';
 import TrustBar from '@/components/TrustBar';
 import Services from '@/components/Services';
 import Work from '@/components/Work';
+import LocalBusiness from '@/components/LocalBusiness';
 import Pricing from '@/components/Pricing';
 import About from '@/components/About';
 import Contact from '@/components/Contact';
@@ -23,6 +24,7 @@ export default function Home() {
         <TrustBar />
         <Services />
         <Work />
+        <LocalBusiness />
         <Pricing />
         <About />
         <Contact />

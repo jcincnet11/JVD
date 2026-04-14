@@ -1,7 +1,7 @@
 import { useTranslations } from 'next-intl';
 import ScrollReveal from './ScrollReveal';
 
-const bundleKeys = ['launch', 'shopify', 'identity', 'retainer'] as const;
+const bundleKeys = ['localPresence', 'launch', 'shopify', 'identity', 'retainer'] as const;
 
 export default function Pricing() {
   const t = useTranslations('pricing');
@@ -26,7 +26,12 @@ export default function Pricing() {
 
             return (
               <ScrollReveal key={key}>
-                <div className="bg-white border border-border rounded-xl p-10 h-full hover:border-accent hover:-translate-y-0.5 transition-all duration-300">
+                <div className="bg-white border border-border rounded-xl p-10 h-full hover:border-accent hover:-translate-y-0.5 transition-all duration-300 relative">
+                  {key === 'localPresence' && (
+                    <span className="absolute top-4 right-4 text-xs font-medium px-2.5 py-1 rounded-full bg-accent/10 text-accent border border-accent/20">
+                      {t(`bundles.${key}.badge`)}
+                    </span>
+                  )}
                   <h3 className="font-serif text-xl font-bold text-charcoal">
                     {t(`bundles.${key}.name`)}
                   </h3>

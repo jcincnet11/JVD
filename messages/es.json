@@ -2,6 +2,7 @@
   "nav": {
     "services": "Servicios",
     "work": "Proyectos",
+    "local": "Local",
     "pricing": "Precios",
     "about": "Nosotros",
     "contact": "Contacto"
@@ -16,7 +17,8 @@
     "delivery": "100% Entrega a Tiempo",
     "industries": "4 Industrias Atendidas",
     "bilingual": "Bilingue EN + ES",
-    "ai": "Flujos Impulsados por IA"
+    "ai": "Flujos Impulsados por IA",
+    "local": "5+ Negocios Locales en PR"
   },
   "services": {
     "heading": "Lo que construimos",
@@ -88,6 +90,18 @@
     "ctaQuestion": "No sabes cual es el indicado para ti?",
     "ctaButton": "Comienza con una llamada gratis →",
     "bundles": {
+      "localPresence": {
+        "name": "Paquete de Presencia Local",
+        "badge": "Ideal para negocios locales",
+        "outcome": "De invisible a inolvidable — en menos de 2 semanas. Para negocios locales en Puerto Rico que necesitan una base digital s\u00f3lida. Empezamos por lo que m\u00e1s importa — Google, tu presencia en l\u00ednea y un sistema para que los clientes regresen.",
+        "covered": [
+          "Configuraci\u00f3n y optimizaci\u00f3n de Google Business Profile",
+          "P\u00e1gina de aterrizaje optimizada para m\u00f3vil",
+          "Perfil de Instagram y sistema de contenido",
+          "Integraci\u00f3n de WhatsApp y enlace de reservas",
+          "Seguimiento a los 30 d\u00edas del lanzamiento"
+        ]
+      },
       "launch": {
         "name": "Diseno y Desarrollo Web",
         "outcome": "Para negocios que necesitan una presencia en linea profesional que realmente convierta visitantes en clientes potenciales. Nos encargamos de todo, desde la estrategia y el diseno hasta el desarrollo y despliegue — para que tengas un sitio que funcione, no solo uno que se vea bien.",
@@ -152,6 +166,7 @@
       "shopify": "Tienda Shopify",
       "brand": "Identidad de Marca",
       "retainer": "Retainer",
+      "localPresence": "Paquete de Presencia Local",
       "notSure": "No estoy seguro/a"
     },
     "message": "Mensaje",
@@ -167,6 +182,40 @@
     "heading": "Pagina no encontrada",
     "description": "La pagina que buscas no existe o ha sido movida.",
     "backHome": "Volver al inicio"
+  },
+  "local": {
+    "label": "PARA NEGOCIOS LOCALES EN PUERTO RICO",
+    "heading": "La mayor\u00eda de los negocios locales en PR no tienen presencia digital. T\u00fa ya llevas ventaja.",
+    "subheading": "Trabajamos con bares, barber\u00edas, boutiques, food trucks y salones — no solo con marcas tech. Si tu negocio corre por boca a boca y WhatsApp, sabemos exactamente lo que necesitas.",
+    "venues": {
+      "bar": {
+        "icon": "\ud83c\udf7a",
+        "name": "Bar / Lounge",
+        "description": "P\u00e1gina de socios gastron\u00f3micos, men\u00fas QR, listado en Google, sistema de Instagram"
+      },
+      "barbershop": {
+        "icon": "\u2702\ufe0f",
+        "name": "Barber\u00eda / Sal\u00f3n",
+        "description": "Reservas en l\u00ednea, embudo de rese\u00f1as, tarjeta de lealtad, perfil de Google"
+      },
+      "beauty": {
+        "icon": "\ud83d\udc85",
+        "name": "Sal\u00f3n de U\u00f1as / Belleza",
+        "description": "P\u00e1gina de reservas, portafolio en Instagram, plantillas de promoci\u00f3n por temporada"
+      },
+      "foodtruck": {
+        "icon": "\ud83d\ude9a",
+        "name": "Food Truck / Pop-Up",
+        "description": "P\u00e1gina de ubicaci\u00f3n en vivo, lista de difusi\u00f3n WhatsApp, formulario de pre-orden"
+      },
+      "boutique": {
+        "icon": "\ud83d\udc57",
+        "name": "Boutique Local",
+        "description": "Tienda link-in-bio, captura de emails, flujo de carrito abandonado"
+      }
+    },
+    "cta": "Cada negocio local recibe un plan personalizado — no una plantilla.",
+    "ctaButton": "Obt\u00e9n tu plan gratis \u2192"
   },
   "footer": {
     "location": "John Vincent Digital · Puerto Rico",
