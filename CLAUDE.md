@@ -103,7 +103,7 @@ The `docs/` folder is the single source of truth for institutional knowledge.
 - **Vercel** — Hosting and deployment. Auto-deploys from GitHub on push to `main`. Project: `john-vincent-digital`.
 - **Google Fonts** — Fraunces + Plus Jakarta Sans loaded via `next/font/google`.
 - **Contact email** — `iamjohnvdiaz@gmail.com` (hardcoded in `components/Contact.tsx`).
-- **GitHub** — Repo at `github.com/jcincnet11/JVD`.
+- **GitHub** — Repo at `github.com/jvincentdigital/JVD`.
 
 ## Conventions
 

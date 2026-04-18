@@ -9,7 +9,7 @@ export default function Footer() {
         <div className="flex flex-col sm:flex-row items-center justify-between gap-4">
           <p className="text-cream/70 text-sm">{t('location')}</p>
           <a
-            href="https://github.com/jcincnet11"
+            href="https://github.com/jvincentdigital"
             target="_blank"
             rel="noopener noreferrer"
             className="text-cream/50 hover:text-cream transition-colors text-sm focus:outline-none focus:ring-2 focus:ring-accent rounded"
