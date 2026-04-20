@@ -16,9 +16,9 @@
   },
   "trustBar": {
     "delivery": "100% On-Time Delivery",
+    "accessibility": "WCAG 2.1 AA Compliant",
+    "bilingual": "Bilingual-First, Not Translated",
     "industries": "4 Industries Served",
-    "bilingual": "Bilingual EN + ES",
-    "ai": "AI-Powered Workflows",
     "local": "5+ Local PR Businesses"
   },
   "services": {
@@ -148,7 +148,8 @@
     "heading": "Who's behind this",
     "p1": "I'm John Vincent, a web designer and digital strategist based in Puerto Rico. I started building websites for local businesses and organizations because I saw a gap — great businesses with weak digital presence, and agencies charging way too much to fix it.",
     "p2": "I use AI-assisted workflows to move faster and smarter than a traditional agency, without cutting corners on quality. Every project I take on gets my full attention — not a junior designer or an outsourced team.",
-    "p3": "My clients range from esports organizations to luxury fashion stylists to fragrance retailers. What they have in common: they needed a digital presence that performs, and they wanted someone who actually gets their business.",
+    "p3": "Every site I build meets WCAG 2.1 AA accessibility standards and ships fully bilingual in English and Puerto Rico Spanish — not machine-translated. These aren't add-ons. They're how the work gets done.",
+    "p4": "My clients range from esports organizations to luxury fashion stylists to fragrance retailers. What they have in common: they needed a digital presence that performs, and they wanted someone who actually gets their business.",
     "stat1": "7+ years building digital products",
     "stat2": "4 live client projects",
     "stat3": "Based in Puerto Rico"

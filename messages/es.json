@@ -16,10 +16,10 @@
   },
   "trustBar": {
     "delivery": "100% Entrega a Tiempo",
+    "accessibility": "Cumplimiento WCAG 2.1 AA",
+    "bilingual": "Bilingüe Nativo, No Traducido",
     "industries": "4 Industrias Atendidas",
-    "bilingual": "Bilingüe EN + ES",
-    "ai": "Flujos Impulsados por IA",
-    "local": "5+ Negocios Locales en PR"
+    "local": "5+ Negocios Locales PR"
   },
   "services": {
     "heading": "Lo que construimos",
@@ -148,7 +148,8 @@
     "heading": "Quién está detrás de esto",
     "p1": "Soy John Vincent, diseñador web y estratega digital basado en Puerto Rico. Comencé a construir sitios web para negocios y organizaciones locales porque vi una brecha — grandes negocios con presencia digital débil, y agencias cobrando demasiado para arreglarlo.",
     "p2": "Uso flujos de trabajo asistidos por IA para moverme más rápido e inteligente que una agencia tradicional, sin sacrificar la calidad. Cada proyecto que tomo recibe mi atención completa — no un diseñador junior ni un equipo subcontratado.",
-    "p3": "Mis clientes van desde organizaciones de esports hasta estilistas de moda de lujo y minoristas de fragancias. Lo que tienen en común: necesitaban una presencia digital que rinda, y querían a alguien que realmente entienda su negocio.",
+    "p3": "Cada sitio que construyo cumple con los estándares de accesibilidad WCAG 2.1 AA y se entrega completamente bilingüe en inglés y español de Puerto Rico — no traducido por máquina. No son extras. Son parte de cómo se hace el trabajo.",
+    "p4": "Mis clientes van desde organizaciones de esports hasta estilistas de moda de lujo y minoristas de fragancias. Lo que tienen en común: necesitaban una presencia digital que rinda, y querían a alguien que realmente entienda su negocio.",
     "stat1": "7+ años construyendo productos digitales",
     "stat2": "4 proyectos activos de clientes",
     "stat3": "Basado en Puerto Rico"
