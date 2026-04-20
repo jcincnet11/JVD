@@ -1,15 +1,18 @@
-import { useTranslations } from 'next-intl';
+import Link from 'next/link';
+import { useTranslations, useLocale } from 'next-intl';
 import ScrollReveal from './ScrollReveal';
 
 const projects = [
-  { key: 'imperfect', color: '#C8E400', url: 'https://imperfectgg.com/en' },
-  { key: 'emmalina', color: '#C9A96E', url: 'https://emmalina-brand.vercel.app' },
-  { key: 'magenta', color: '#C4587A', url: 'https://magentathelabel.vercel.app' },
-  { key: 'profumo', color: '#8B6F47', url: 'https://v0-perfume-store-clone-eight.vercel.app' },
+  { key: 'imperfect', slug: 'imperfect-gaming', color: '#C8E400' },
+  { key: 'emmalina', slug: 'emmalina', color: '#C9A96E' },
+  { key: 'magenta', slug: 'magenta-the-label', color: '#C4587A' },
+  { key: 'profumo', slug: 'profumo-di-vita', color: '#8B6F47' },
 ];
 
 export default function Work() {
   const t = useTranslations('work');
+  const tCase = useTranslations('caseStudy');
+  const locale = useLocale();
 
   return (
     <section id="work" className="bg-cream py-20 px-4">
@@ -48,14 +51,12 @@ export default function Work() {
                       {t(`projects.${project.key}.challenge`)}
                     </p>
                   </div>
-                  <a
-                    href={project.url}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="inline-block mt-4 text-accent font-medium hover:text-accent-dark transition-colors focus:outline-none focus:ring-2 focus:ring-accent rounded"
+                  <Link
+                    href={`/${locale}/work/${project.slug}`}
+                    className="inline-block mt-4 text-accent font-medium hover:text-accent-dark transition-colors focus:outline-none focus:ring-2 focus:ring-accent focus:ring-offset-2 rounded"
                   >
-                    {t('viewProject')}
-                  </a>
+                    {tCase('readCaseStudy')}
+                  </Link>
                 </div>
               </div>
             </ScrollReveal>

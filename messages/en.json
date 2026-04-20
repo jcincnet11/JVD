@@ -51,7 +51,6 @@
   "work": {
     "heading": "Recent work",
     "subheading": "Four live projects across esports, luxury fashion, e-commerce, and fragrance.",
-    "viewProject": "View project →",
     "projects": {
       "imperfect": {
         "name": "IMPerfect Gaming",
@@ -222,5 +221,17 @@
   "footer": {
     "location": "John Vincent Digital · Puerto Rico",
     "copyright": "© 2026 · Built with Next.js & Vercel"
+  },
+  "caseStudy": {
+    "breadcrumbWork": "Work",
+    "sectionBrief": "The brief",
+    "sectionChallenge": "The challenge",
+    "sectionApproach": "The approach",
+    "sectionOutcome": "The outcome",
+    "sectionStack": "Tech stack",
+    "ctaLive": "Visit live site →",
+    "ctaSimilar": "Start a similar project →",
+    "otherWork": "Other work",
+    "readCaseStudy": "Read case study →"
   }
 }

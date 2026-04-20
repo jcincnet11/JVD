@@ -51,7 +51,6 @@
   "work": {
     "heading": "Trabajo reciente",
     "subheading": "Cuatro proyectos activos en esports, moda de lujo, e-commerce y fragancias.",
-    "viewProject": "Ver proyecto →",
     "projects": {
       "imperfect": {
         "name": "IMPerfect Gaming",
@@ -222,5 +221,17 @@
   "footer": {
     "location": "John Vincent Digital · Puerto Rico",
     "copyright": "© 2026 · Hecho con Next.js & Vercel"
+  },
+  "caseStudy": {
+    "breadcrumbWork": "Proyectos",
+    "sectionBrief": "El encargo",
+    "sectionChallenge": "El reto",
+    "sectionApproach": "El enfoque",
+    "sectionOutcome": "El resultado",
+    "sectionStack": "Stack técnico",
+    "ctaLive": "Visitar sitio →",
+    "ctaSimilar": "Empieza un proyecto similar →",
+    "otherWork": "Otros proyectos",
+    "readCaseStudy": "Leer caso de estudio →"
   }
 }

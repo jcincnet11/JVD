@@ -1,8 +1,9 @@
 'use client';
 
 import { useState, useEffect } from 'react';
-import { useTranslations } from 'next-intl';
-import { useLocale } from 'next-intl';
+import Link from 'next/link';
+import { usePathname } from 'next/navigation';
+import { useTranslations, useLocale } from 'next-intl';
 
 const sections: Array<{ id: string; label: string }> = [
   { id: 'services', label: 'services' },
@@ -16,9 +17,12 @@ const sections: Array<{ id: string; label: string }> = [
 export default function Nav() {
   const t = useTranslations('nav');
   const locale = useLocale();
+  const pathname = usePathname();
   const [isOpen, setIsOpen] = useState(false);
   const [activeSection, setActiveSection] = useState('');
   const [scrolled, setScrolled] = useState(false);
+
+  const isHome = pathname === `/${locale}` || pathname === `/${locale}/`;
 
   useEffect(() => {
     const handleScroll = () => setScrolled(window.scrollY > 10);
@@ -27,6 +31,10 @@ export default function Nav() {
   }, []);
 
   useEffect(() => {
+    if (!isHome) {
+      setActiveSection('');
+      return;
+    }
     const observer = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
@@ -44,9 +52,12 @@ export default function Nav() {
     });
 
     return () => observer.disconnect();
-  }, []);
+  }, [isHome]);
 
   const otherLocale = locale === 'en' ? 'es' : 'en';
+  const otherPath =
+    pathname.replace(/^\/(en|es)/, `/${otherLocale}`) || `/${otherLocale}`;
+  const hrefFor = (id: string) => (isHome ? `#${id}` : `/${locale}#${id}`);
 
   return (
     <nav
@@ -56,15 +67,18 @@ export default function Nav() {
     >
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
-          <a href="#" className="font-serif text-xl font-bold text-charcoal">
+          <Link
+            href={`/${locale}`}
+            className="font-serif text-xl font-bold text-charcoal focus:outline-none focus:ring-2 focus:ring-accent focus:ring-offset-2 rounded"
+          >
             John Vincent Digital
-          </a>
+          </Link>
 
           <div className="hidden md:flex items-center gap-8">
             {sections.map(({ id, label }) => (
               <a
                 key={id}
-                href={`#${id}`}
+                href={hrefFor(id)}
                 className={`text-sm font-medium transition-colors pb-1 ${
                   activeSection === id
                     ? 'text-accent border-b-2 border-accent'
@@ -74,25 +88,26 @@ export default function Nav() {
                 {t(label)}
               </a>
             ))}
-            <a
-              href={`/${otherLocale}`}
+            <Link
+              href={otherPath}
               className="text-sm font-medium px-3 py-1 rounded border border-border text-warm-gray hover:text-charcoal hover:border-charcoal transition-colors"
             >
               {locale === 'en' ? 'ES' : 'EN'}
-            </a>
+            </Link>
           </div>
 
           <div className="md:hidden flex items-center gap-3">
-            <a
-              href={`/${otherLocale}`}
+            <Link
+              href={otherPath}
               className="text-sm font-medium px-3 py-1 rounded border border-border text-warm-gray"
             >
               {locale === 'en' ? 'ES' : 'EN'}
-            </a>
+            </Link>
             <button
               onClick={() => setIsOpen(!isOpen)}
               className="text-charcoal p-2 focus:outline-none focus:ring-2 focus:ring-accent rounded"
               aria-label="Toggle menu"
+              aria-expanded={isOpen}
             >
               <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 {isOpen ? (
@@ -110,7 +125,7 @@ export default function Nav() {
             {sections.map(({ id, label }) => (
               <a
                 key={id}
-                href={`#${id}`}
+                href={hrefFor(id)}
                 onClick={() => setIsOpen(false)}
                 className={`block py-2 text-sm font-medium ${
                   activeSection === id ? 'text-accent' : 'text-warm-gray hover:text-charcoal'
