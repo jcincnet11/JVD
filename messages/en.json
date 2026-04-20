@@ -156,10 +156,9 @@
   "contact": {
     "heading": "Let's build something.",
     "subheading": "Tell me about your project and I'll get back to you within 24 hours.",
-    "name": "Name",
-    "email": "Email",
-    "business": "Business name",
-    "service": "Service interest",
+    "successHeading": "Message sent!",
+    "sendAnother": "Send another message",
+    "whatsapp": "Prefer WhatsApp? Message me directly.",
     "serviceOptions": {
       "placeholder": "Select a service",
       "website": "Website",
@@ -169,14 +168,17 @@
       "localPresence": "Local Presence Package",
       "notSure": "Not sure yet"
     },
-    "message": "Message",
-    "submit": "Send message →",
-    "sending": "Sending...",
-    "successHeading": "Message sent!",
-    "successMessage": "Thanks for reaching out. I'll get back to you within 24 hours.",
-    "sendAnother": "Send another message",
-    "errorMessage": "Something went wrong. Please try again or message me on WhatsApp.",
-    "whatsapp": "Prefer WhatsApp? Message me directly."
+    "form": {
+      "required_note": "Fields marked with * are required",
+      "name": { "label": "Name", "error": "Please enter your name" },
+      "email": { "label": "Email", "error": "Please enter a valid email address" },
+      "business": { "label": "Business name (optional)" },
+      "service": { "label": "Service interest (optional)" },
+      "message": { "label": "Message", "error": "Please enter a message (at least 10 characters)" },
+      "submit": { "default": "Send message →", "loading": "Sending..." },
+      "success": "Thanks — I'll be in touch within 24 hours.",
+      "generic_error": "Something went wrong. Please try again or message me on WhatsApp."
+    }
   },
   "notFound": {
     "heading": "Page not found",

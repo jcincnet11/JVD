@@ -16,36 +16,36 @@
   "trustBar": {
     "delivery": "100% Entrega a Tiempo",
     "industries": "4 Industrias Atendidas",
-    "bilingual": "Bilingue EN + ES",
+    "bilingual": "Bilingüe EN + ES",
     "ai": "Flujos Impulsados por IA",
     "local": "5+ Negocios Locales en PR"
   },
   "services": {
     "heading": "Lo que construimos",
-    "subheading": "Cada proyecto comienza con una conversacion. Esto es lo que podemos construir juntos.",
+    "subheading": "Cada proyecto comienza con una conversación. Esto es lo que podemos construir juntos.",
     "card1": {
-      "title": "Diseno y Desarrollo Web",
+      "title": "Diseño y Desarrollo Web",
 
-      "description": "Disenamos y construimos sitios web rapidos y modernos en Next.js — desde sitios de lanzamiento de 5 paginas hasta experiencias de marca completas con animaciones, CMS y soporte bilingue.",
-      "link": "Mas informacion →"
+      "description": "Diseñamos y construimos sitios web rápidos y modernos en Next.js — desde sitios de lanzamiento de 5 páginas hasta experiencias de marca completas con animaciones, CMS y soporte bilingüe.",
+      "link": "Más información →"
     },
     "card2": {
       "title": "E-Commerce en Shopify",
 
-      "description": "Configuracion completa de tienda Shopify — productos, pagos, envios, flujos de email y un diseno que convierte visitantes en compradores.",
-      "link": "Mas informacion →"
+      "description": "Configuración completa de tienda Shopify — productos, pagos, envíos, flujos de email y un diseño que convierte visitantes en compradores.",
+      "link": "Más información →"
     },
     "card3": {
       "title": "Identidad de Marca",
 
-      "description": "Logo, colores, tipografia y directrices de marca — todo lo que necesitas para presentarte consistentemente en web, redes sociales e impresos.",
-      "link": "Mas informacion →"
+      "description": "Logo, colores, tipografía y directrices de marca — todo lo que necesitas para presentarte consistentemente en web, redes sociales e impresos.",
+      "link": "Más información →"
     },
     "card4": {
       "title": "Retainer Mensual",
 
-      "description": "Mantenimiento mensual, actualizaciones, llamadas de estrategia y nuevas funcionalidades — para que tu sitio siga creciendo despues del lanzamiento.",
-      "link": "Mas informacion →"
+      "description": "Mantenimiento mensual, actualizaciones, llamadas de estrategia y nuevas funcionalidades — para que tu sitio siga creciendo después del lanzamiento.",
+      "link": "Más información →"
     }
   },
   "work": {
@@ -56,88 +56,88 @@
       "imperfect": {
         "name": "IMPerfect Gaming",
         "industry": "Esports",
-        "description": "Organizacion de Puerto Rico compitiendo en OW2 y Marvel Rivals",
+        "description": "Organización de Puerto Rico compitiendo en OW2 y Marvel Rivals",
         "challengeLabel": "El reto",
-        "challenge": "Construir un sistema bilingue de gestion de organizacion que pudiera manejar movimientos de roster, programacion de scrims y anuncios del equipo — todo sin requerir que el staff de coaching tocara el codigo. La solucion fue un Team Hub basado en roles con permisos para Admin, Coach y Manager."
+        "challenge": "Construir un sistema bilingüe de gestión de organización que pudiera manejar movimientos de roster, programación de scrims y anuncios del equipo — todo sin requerir que el staff de coaching tocara el código. La solución fue un Team Hub basado en roles con permisos para Admin, Coach y Manager."
       },
       "emmalina": {
         "name": "Emmalina",
         "industry": "Moda de Lujo",
         "description": "Marca de estilista personal para asociada de Saks/NM/Bergdorf",
         "challengeLabel": "El reto",
-        "challenge": "La clienta necesitaba convertir visitantes casuales en clientes de estilismo privado, mientras simultaneamente impulsaba ventas de afiliados a traves de Saks, Neiman Marcus y Bergdorf Goodman. Reestructuramos el sitio alrededor de su marca personal primero, con el comercio de afiliados como capa secundaria — no al reves."
+        "challenge": "La clienta necesitaba convertir visitantes casuales en clientes de estilismo privado, mientras simultáneamente impulsaba ventas de afiliados a través de Saks, Neiman Marcus y Bergdorf Goodman. Reestructuramos el sitio alrededor de su marca personal primero, con el comercio de afiliados como capa secundaria — no al revés."
       },
       "magenta": {
         "name": "Magenta The Label",
         "industry": "E-Commerce",
         "description": "Marca de carteras artesanales en Shopify",
         "challengeLabel": "El reto",
-        "challenge": "Lanzar una tienda Shopify para una marca de productos artesanales donde cada articulo es unico creo un problema de inventario particular — los flujos estandar de e-commerce asumen SKUs repetibles. Construimos una estructura de producto personalizada que comunicaba la escasez como una caracteristica, no una limitacion, lo que mejoro directamente la conversion."
+        "challenge": "Lanzar una tienda Shopify para una marca de productos artesanales donde cada artículo es único creó un problema de inventario particular — los flujos estándar de e-commerce asumen SKUs repetibles. Construimos una estructura de producto personalizada que comunicaba la escasez como una característica, no una limitación, lo que mejoró directamente la conversión."
       },
       "profumo": {
         "name": "Profumo di Vita",
         "industry": "Fragancias",
-        "description": "Tienda bilingue de fragancias de lujo, 2 ubicaciones en PR",
+        "description": "Tienda bilingüe de fragancias de lujo, 2 ubicaciones en PR",
         "challengeLabel": "El reto",
-        "challenge": "Operar como una tienda completamente bilingue EN/ES con dos ubicaciones fisicas en Puerto Rico significaba que cada pieza de contenido — descripciones de productos, detalles de membresia, horarios, texto promocional — tenia que mantenerse en paralelo sin crear el doble de trabajo. Implementamos un sistema de gestion de traducciones que mantuvo ambos idiomas sincronizados con una sola actualizacion de contenido."
+        "challenge": "Operar como una tienda completamente bilingüe EN/ES con dos ubicaciones físicas en Puerto Rico significaba que cada pieza de contenido — descripciones de productos, detalles de membresía, horarios, texto promocional — tenía que mantenerse en paralelo sin crear el doble de trabajo. Implementamos un sistema de gestión de traducciones que mantuvo ambos idiomas sincronizados con una sola actualización de contenido."
       }
     }
   },
   "pricing": {
-    "heading": "Como trabajamos",
-    "subheading": "Cada proyecto se define segun tus objetivos — no es una plantilla generica. Esto es lo que cubre cada tipo de proyecto.",
-    "coveredLabel": "Que incluye",
-    "ctaQuestion": "No sabes cual es el indicado para ti?",
-    "ctaButton": "Comienza con una llamada gratis →",
+    "heading": "Cómo trabajamos",
+    "subheading": "Cada proyecto se define según tus objetivos — no es una plantilla genérica. Esto es lo que cubre cada tipo de proyecto.",
+    "coveredLabel": "Qué incluye",
+    "ctaQuestion": "¿No sabes cuál es el indicado para ti?",
+    "ctaButton": "Agenda una llamada gratis →",
     "bundles": {
       "localPresence": {
         "name": "Paquete de Presencia Local",
         "badge": "Ideal para negocios locales",
-        "outcome": "De invisible a inolvidable — en menos de 2 semanas. Para negocios locales en Puerto Rico que necesitan una base digital s\u00f3lida. Empezamos por lo que m\u00e1s importa — Google, tu presencia en l\u00ednea y un sistema para que los clientes regresen.",
+        "outcome": "De invisible a inolvidable — en menos de 2 semanas. Para negocios locales en Puerto Rico que necesitan una base digital sólida. Empezamos por lo que más importa — Google, tu presencia en línea y un sistema para que los clientes regresen.",
         "covered": [
-          "Configuraci\u00f3n y optimizaci\u00f3n de Google Business Profile",
-          "P\u00e1gina de aterrizaje optimizada para m\u00f3vil",
+          "Configuración y optimización de Google Business Profile",
+          "Página de aterrizaje optimizada para móvil",
           "Perfil de Instagram y sistema de contenido",
-          "Integraci\u00f3n de WhatsApp y enlace de reservas",
-          "Seguimiento a los 30 d\u00edas del lanzamiento"
+          "Integración de WhatsApp y enlace de reservas",
+          "Seguimiento a los 30 días del lanzamiento"
         ]
       },
       "launch": {
-        "name": "Diseno y Desarrollo Web",
-        "outcome": "Para negocios que necesitan una presencia en linea profesional que realmente convierta visitantes en clientes potenciales. Nos encargamos de todo, desde la estrategia y el diseno hasta el desarrollo y despliegue — para que tengas un sitio que funcione, no solo uno que se vea bien.",
+        "name": "Diseño y Desarrollo Web",
+        "outcome": "Para negocios que necesitan una presencia en línea profesional que realmente convierta visitantes en clientes potenciales. Nos encargamos de todo, desde la estrategia y el diseño hasta el desarrollo y despliegue — para que tengas un sitio que funcione, no solo uno que se vea bien.",
         "covered": [
-          "Diseno personalizado adaptado a tu marca",
-          "Construccion mobile-first y rapida en Next.js",
-          "Base de SEO y configuracion de analiticas",
+          "Diseño personalizado adaptado a tu marca",
+          "Construcción mobile-first y rápida en Next.js",
+          "Base de SEO y configuración de analíticas",
           "Desplegado en Vercel con tu dominio propio"
         ]
       },
       "shopify": {
         "name": "E-Commerce en Shopify",
-        "outcome": "Para marcas listas para vender en linea sin los dolores de cabeza tecnicos. Configuramos tu tienda completa — productos, pagos, envios y los emails que traen clientes de vuelta — para que puedas enfocarte en lo que creas, no en como venderlo.",
+        "outcome": "Para marcas listas para vender en línea sin los dolores de cabeza técnicos. Configuramos tu tienda completa — productos, pagos, envíos y los emails que traen clientes de vuelta — para que puedas enfocarte en lo que creas, no en cómo venderlo.",
         "covered": [
-          "Construccion y configuracion completa de tienda Shopify",
-          "Configuracion de catalogo de productos y organizacion de colecciones",
-          "Pasarela de pago, zonas de envio y configuracion de impuestos",
+          "Construcción y configuración completa de tienda Shopify",
+          "Configuración de catálogo de productos y organización de colecciones",
+          "Pasarela de pago, zonas de envío y configuración de impuestos",
           "Flujos de email automatizados para bienvenida y carrito abandonado"
         ]
       },
       "identity": {
         "name": "Identidad de Marca",
-        "outcome": "Para negocios que necesitan verse profesionales antes de construir el sitio. Creamos un sistema de identidad visual — logo, colores, tipografia y directrices — que funciona consistentemente en cada punto de contacto que tus clientes veran.",
+        "outcome": "Para negocios que necesitan verse profesionales antes de construir el sitio. Creamos un sistema de identidad visual — logo, colores, tipografía y directrices — que funciona consistentemente en cada punto de contacto que tus clientes verán.",
         "covered": [
-          "Diseno de logo con multiples conceptos y revisiones",
-          "Paleta de colores y sistema tipografico",
+          "Diseño de logo con múltiples conceptos y revisiones",
+          "Paleta de colores y sistema tipográfico",
           "Documento de directrices de marca",
           "Kit de perfiles para redes sociales listo para usar"
         ]
       },
       "retainer": {
         "name": "Retainer Continuo",
-        "outcome": "Para clientes que quieren un socio digital a largo plazo, no solo un proveedor de una sola vez. Nos quedamos como tu equipo dedicado — manejando actualizaciones, agregando funcionalidades y asegurandonos de que tu sitio siga creciendo junto a tu negocio.",
+        "outcome": "Para clientes que quieren un socio digital a largo plazo, no solo un proveedor de una sola vez. Nos quedamos como tu equipo dedicado — manejando actualizaciones, agregando funcionalidades y asegurándonos de que tu sitio siga creciendo junto a tu negocio.",
         "covered": [
           "Actualizaciones mensuales del sitio y cambios de contenido",
-          "Monitoreo de rendimiento y correccion de errores",
+          "Monitoreo de rendimiento y corrección de errores",
           "Reuniones de estrategia para priorizar lo siguiente",
           "Tiempo de respuesta prioritario para solicitudes urgentes"
         ]
@@ -145,21 +145,20 @@
     }
   },
   "about": {
-    "heading": "Quien esta detras de esto",
-    "p1": "Soy John Vincent, disenador web y estratega digital basado en Puerto Rico. Comence a construir sitios web para negocios y organizaciones locales porque vi una brecha — grandes negocios con presencia digital debil, y agencias cobrando demasiado para arreglarlo.",
-    "p2": "Uso flujos de trabajo asistidos por IA para moverme mas rapido e inteligente que una agencia tradicional, sin sacrificar la calidad. Cada proyecto que tomo recibe mi atencion completa — no un disenador junior ni un equipo subcontratado.",
-    "p3": "Mis clientes van desde organizaciones de esports hasta estilistas de moda de lujo y minoristas de fragancias. Lo que tienen en comun: necesitaban una presencia digital que rinda, y querian a alguien que realmente entienda su negocio.",
-    "stat1": "7+ anos construyendo productos digitales",
+    "heading": "Quién está detrás de esto",
+    "p1": "Soy John Vincent, diseñador web y estratega digital basado en Puerto Rico. Comencé a construir sitios web para negocios y organizaciones locales porque vi una brecha — grandes negocios con presencia digital débil, y agencias cobrando demasiado para arreglarlo.",
+    "p2": "Uso flujos de trabajo asistidos por IA para moverme más rápido e inteligente que una agencia tradicional, sin sacrificar la calidad. Cada proyecto que tomo recibe mi atención completa — no un diseñador junior ni un equipo subcontratado.",
+    "p3": "Mis clientes van desde organizaciones de esports hasta estilistas de moda de lujo y minoristas de fragancias. Lo que tienen en común: necesitaban una presencia digital que rinda, y querían a alguien que realmente entienda su negocio.",
+    "stat1": "7+ años construyendo productos digitales",
     "stat2": "4 proyectos activos de clientes",
     "stat3": "Basado en Puerto Rico"
   },
   "contact": {
     "heading": "Construyamos algo.",
-    "subheading": "Cuentame sobre tu proyecto y te respondere en menos de 24 horas.",
-    "name": "Nombre",
-    "email": "Correo electronico",
-    "business": "Nombre del negocio",
-    "service": "Servicio de interes",
+    "subheading": "Cuéntame sobre tu proyecto y te responderé en menos de 24 horas.",
+    "successHeading": "¡Mensaje enviado!",
+    "sendAnother": "Enviar otro mensaje",
+    "whatsapp": "¿Prefieres WhatsApp? Escríbeme directamente.",
     "serviceOptions": {
       "placeholder": "Selecciona un servicio",
       "website": "Sitio Web",
@@ -169,53 +168,56 @@
       "localPresence": "Paquete de Presencia Local",
       "notSure": "No estoy seguro/a"
     },
-    "message": "Mensaje",
-    "submit": "Enviar mensaje →",
-    "sending": "Enviando...",
-    "successHeading": "Mensaje enviado!",
-    "successMessage": "Gracias por escribir. Te respondere en menos de 24 horas.",
-    "sendAnother": "Enviar otro mensaje",
-    "errorMessage": "Algo salio mal. Intenta de nuevo o escribeme por WhatsApp.",
-    "whatsapp": "Prefieres WhatsApp? Escribeme directamente."
+    "form": {
+      "required_note": "Los campos marcados con * son obligatorios",
+      "name": { "label": "Nombre", "error": "Por favor ingresa tu nombre" },
+      "email": { "label": "Correo electrónico", "error": "Por favor ingresa un correo electrónico válido" },
+      "business": { "label": "Nombre del negocio (opcional)" },
+      "service": { "label": "Servicio de interés (opcional)" },
+      "message": { "label": "Mensaje", "error": "Por favor ingresa un mensaje (mínimo 10 caracteres)" },
+      "submit": { "default": "Enviar mensaje →", "loading": "Enviando..." },
+      "success": "Gracias — te contactaré en menos de 24 horas.",
+      "generic_error": "Algo salió mal. Inténtalo de nuevo o escríbeme por WhatsApp."
+    }
   },
   "notFound": {
-    "heading": "Pagina no encontrada",
-    "description": "La pagina que buscas no existe o ha sido movida.",
+    "heading": "Página no encontrada",
+    "description": "La página que buscas no existe o ha sido movida.",
     "backHome": "Volver al inicio"
   },
   "local": {
     "label": "PARA NEGOCIOS LOCALES EN PUERTO RICO",
-    "heading": "La mayor\u00eda de los negocios locales en PR no tienen presencia digital. T\u00fa ya llevas ventaja.",
-    "subheading": "Trabajamos con bares, barber\u00edas, boutiques, food trucks y salones — no solo con marcas tech. Si tu negocio corre por boca a boca y WhatsApp, sabemos exactamente lo que necesitas.",
+    "heading": "La mayoría de los negocios locales en PR no tienen presencia digital. Tú ya llevas ventaja.",
+    "subheading": "Trabajamos con bares, barberías, boutiques, food trucks y salones — no solo con marcas tech. Si tu negocio corre por boca a boca y WhatsApp, sabemos exactamente lo que necesitas.",
     "venues": {
       "bar": {
-        "icon": "\ud83c\udf7a",
+        "icon": "🍺",
         "name": "Bar / Lounge",
-        "description": "P\u00e1gina de socios gastron\u00f3micos, men\u00fas QR, listado en Google, sistema de Instagram"
+        "description": "Página de socios gastronómicos, menús QR, listado en Google, sistema de Instagram"
       },
       "barbershop": {
-        "icon": "\u2702\ufe0f",
-        "name": "Barber\u00eda / Sal\u00f3n",
-        "description": "Reservas en l\u00ednea, embudo de rese\u00f1as, tarjeta de lealtad, perfil de Google"
+        "icon": "✂️",
+        "name": "Barbería / Salón",
+        "description": "Reservas en línea, embudo de reseñas, tarjeta de lealtad, perfil de Google"
       },
       "beauty": {
-        "icon": "\ud83d\udc85",
-        "name": "Sal\u00f3n de U\u00f1as / Belleza",
-        "description": "P\u00e1gina de reservas, portafolio en Instagram, plantillas de promoci\u00f3n por temporada"
+        "icon": "💅",
+        "name": "Salón de Uñas / Belleza",
+        "description": "Página de reservas, portafolio en Instagram, plantillas de promoción por temporada"
       },
       "foodtruck": {
-        "icon": "\ud83d\ude9a",
+        "icon": "🚚",
         "name": "Food Truck / Pop-Up",
-        "description": "P\u00e1gina de ubicaci\u00f3n en vivo, lista de difusi\u00f3n WhatsApp, formulario de pre-orden"
+        "description": "Página de ubicación en vivo, lista de difusión WhatsApp, formulario de pre-orden"
       },
       "boutique": {
-        "icon": "\ud83d\udc57",
+        "icon": "👗",
         "name": "Boutique Local",
         "description": "Tienda link-in-bio, captura de emails, flujo de carrito abandonado"
       }
     },
     "cta": "Cada negocio local recibe un plan personalizado — no una plantilla.",
-    "ctaButton": "Obt\u00e9n tu plan gratis \u2192"
+    "ctaButton": "Agenda una llamada gratis →"
   },
   "footer": {
     "location": "John Vincent Digital · Puerto Rico",
