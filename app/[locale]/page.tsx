@@ -5,6 +5,7 @@ import Services from '@/components/Services';
 import Work from '@/components/Work';
 import LocalBusiness from '@/components/LocalBusiness';
 import Pricing from '@/components/Pricing';
+import AccessibilitySection from '@/components/AccessibilitySection';
 import About from '@/components/About';
 import Contact from '@/components/Contact';
 import Footer from '@/components/Footer';
@@ -26,6 +27,7 @@ export default function Home() {
         <Work />
         <LocalBusiness />
         <Pricing />
+        <AccessibilitySection />
         <About />
         <Contact />
       </main>

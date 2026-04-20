@@ -4,6 +4,7 @@
     "work": "Work",
     "local": "Local",
     "packages": "Packages",
+    "accessibility": "Accessibility",
     "about": "About",
     "contact": "Contact"
   },
@@ -163,6 +164,7 @@
       "website": "Website",
       "shopify": "Shopify Store",
       "brand": "Brand Identity",
+      "accessibility": "Accessibility Audit",
       "retainer": "Retainer",
       "localPresence": "Local Presence Package",
       "notSure": "Not sure yet"
@@ -221,6 +223,58 @@
   "footer": {
     "location": "John Vincent Digital · Puerto Rico",
     "copyright": "© 2026 · Built with Next.js & Vercel"
+  },
+  "accessibility": {
+    "label": "NEW SERVICE",
+    "heading": "Accessibility Audits",
+    "subheading": "Your website should work for everyone — and it should keep you out of legal trouble.",
+    "intro": "ADA-related lawsuits against small business sites have tripled since 2022. Accessibility signals affect Google rankings. And bilingual audits — in both English and Spanish — aren't being offered anywhere else in Puerto Rico.",
+    "trustSignal": "Built on the same standards we use for our own site — WCAG 2.1 AA compliant, tested on real screen readers, reviewed in both English and Spanish.",
+    "mostPopular": "Most Popular",
+    "bottomCtaHeading": "Not sure if your site has issues?",
+    "bottomCtaSubheading": "Get a free 10-minute scan — no commitment.",
+    "bottomCtaButton": "Get free scan →",
+    "tier1": {
+      "name": "Audit Report",
+      "price": "From $750",
+      "tagline": "Know exactly what's broken and why.",
+      "features": [
+        "Full WCAG 2.1 AA audit of up to 5 pages",
+        "Automated scan + manual review",
+        "Severity-ranked findings report",
+        "Screen reader recordings of key flows",
+        "Code-level fix recommendations",
+        "Delivered in 5-7 business days"
+      ],
+      "cta": "Request audit →"
+    },
+    "tier2": {
+      "name": "Audit + Remediation",
+      "price": "$1,800",
+      "tagline": "We find the issues. Then we fix them.",
+      "features": [
+        "Everything in Audit Report",
+        "We implement all Critical and Serious fixes",
+        "Up to 3 pages of remediation included",
+        "Before/after Lighthouse scan to prove improvement",
+        "30-day fix warranty",
+        "Delivered in 10-14 business days"
+      ],
+      "cta": "Start my audit →"
+    },
+    "tier3": {
+      "name": "Compliance Partnership",
+      "price": "$400/mo",
+      "tagline": "Ongoing compliance for sites that actually change.",
+      "features": [
+        "Monthly automated scan",
+        "Monthly spot-check of recently changed pages",
+        "Quarterly full audit",
+        "48-hour priority response for new issues",
+        "Annual compliance letter for legal/insurance"
+      ],
+      "cta": "Talk about a retainer →"
+    }
   },
   "caseStudy": {
     "breadcrumbWork": "Work",

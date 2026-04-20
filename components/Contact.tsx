@@ -1,7 +1,8 @@
 'use client';
 
 import { useTranslations } from 'next-intl';
-import { FormEvent, useRef, useState } from 'react';
+import { useSearchParams } from 'next/navigation';
+import { FormEvent, useEffect, useRef, useState } from 'react';
 import ScrollReveal from './ScrollReveal';
 
 type FormStatus = 'idle' | 'submitting' | 'success' | 'error';
@@ -22,6 +23,14 @@ export default function Contact() {
   const nameRef = useRef<HTMLInputElement>(null);
   const emailRef = useRef<HTMLInputElement>(null);
   const messageRef = useRef<HTMLTextAreaElement>(null);
+  const searchParams = useSearchParams();
+
+  useEffect(() => {
+    const preselected = searchParams.get('service');
+    if (preselected) {
+      setFormData((prev) => ({ ...prev, service: preselected }));
+    }
+  }, [searchParams]);
 
   const validate = (): FieldErrors => {
     const next: FieldErrors = {};
@@ -181,6 +190,7 @@ export default function Contact() {
                   <option value="website" className="text-charcoal">{t('serviceOptions.website')}</option>
                   <option value="shopify" className="text-charcoal">{t('serviceOptions.shopify')}</option>
                   <option value="brand" className="text-charcoal">{t('serviceOptions.brand')}</option>
+                  <option value="accessibility" className="text-charcoal">{t('serviceOptions.accessibility')}</option>
                   <option value="retainer" className="text-charcoal">{t('serviceOptions.retainer')}</option>
                   <option value="local-presence" className="text-charcoal">{t('serviceOptions.localPresence')}</option>
                   <option value="not-sure" className="text-charcoal">{t('serviceOptions.notSure')}</option>

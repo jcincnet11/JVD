@@ -4,6 +4,7 @@
     "work": "Proyectos",
     "local": "Local",
     "packages": "Paquetes",
+    "accessibility": "Accesibilidad",
     "about": "Nosotros",
     "contact": "Contacto"
   },
@@ -163,6 +164,7 @@
       "website": "Sitio Web",
       "shopify": "Tienda Shopify",
       "brand": "Identidad de Marca",
+      "accessibility": "Auditoría de Accesibilidad",
       "retainer": "Retainer",
       "localPresence": "Paquete de Presencia Local",
       "notSure": "No estoy seguro/a"
@@ -221,6 +223,58 @@
   "footer": {
     "location": "John Vincent Digital · Puerto Rico",
     "copyright": "© 2026 · Hecho con Next.js & Vercel"
+  },
+  "accessibility": {
+    "label": "NUEVO SERVICIO",
+    "heading": "Auditorías de Accesibilidad",
+    "subheading": "Tu sitio web debería funcionar para todos — y debería mantenerte fuera de problemas legales.",
+    "intro": "Las demandas relacionadas con ADA contra sitios de pequeños negocios se han triplicado desde 2022. Las señales de accesibilidad afectan el posicionamiento en Google. Y las auditorías bilingües — en inglés y español — no las está ofreciendo nadie más en Puerto Rico.",
+    "trustSignal": "Construido con los mismos estándares que usamos en nuestro propio sitio — cumplimiento WCAG 2.1 AA, probado en lectores de pantalla reales, revisado en inglés y español.",
+    "mostPopular": "Más Popular",
+    "bottomCtaHeading": "¿No estás seguro si tu sitio tiene problemas?",
+    "bottomCtaSubheading": "Obtén un escaneo gratuito de 10 minutos — sin compromiso.",
+    "bottomCtaButton": "Obtener escaneo gratis →",
+    "tier1": {
+      "name": "Reporte de Auditoría",
+      "price": "Desde $750",
+      "tagline": "Sabe exactamente qué está roto y por qué.",
+      "features": [
+        "Auditoría completa WCAG 2.1 AA de hasta 5 páginas",
+        "Escaneo automatizado + revisión manual",
+        "Reporte de hallazgos clasificados por severidad",
+        "Grabaciones de lector de pantalla en flujos clave",
+        "Recomendaciones de corrección a nivel de código",
+        "Entregado en 5-7 días hábiles"
+      ],
+      "cta": "Solicitar auditoría →"
+    },
+    "tier2": {
+      "name": "Auditoría + Remediación",
+      "price": "$1,800",
+      "tagline": "Encontramos los problemas. Y los resolvemos.",
+      "features": [
+        "Todo lo del Reporte de Auditoría",
+        "Implementamos todas las correcciones Críticas y Serias",
+        "Hasta 3 páginas de remediación incluidas",
+        "Escaneo Lighthouse antes/después para probar la mejora",
+        "Garantía de 30 días en las correcciones",
+        "Entregado en 10-14 días hábiles"
+      ],
+      "cta": "Empezar mi auditoría →"
+    },
+    "tier3": {
+      "name": "Alianza de Cumplimiento",
+      "price": "$400/mes",
+      "tagline": "Cumplimiento continuo para sitios que realmente cambian.",
+      "features": [
+        "Escaneo automatizado mensual",
+        "Revisión mensual de páginas actualizadas recientemente",
+        "Auditoría completa trimestral",
+        "Respuesta prioritaria de 48 horas para nuevos problemas",
+        "Carta anual de cumplimiento para legal/seguros"
+      ],
+      "cta": "Hablar sobre un retainer →"
+    }
   },
   "caseStudy": {
     "breadcrumbWork": "Proyectos",

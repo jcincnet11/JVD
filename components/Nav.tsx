@@ -10,6 +10,7 @@ const sections: Array<{ id: string; label: string }> = [
   { id: 'work', label: 'work' },
   { id: 'local', label: 'local' },
   { id: 'pricing', label: 'packages' },
+  { id: 'accessibility', label: 'accessibility' },
   { id: 'about', label: 'about' },
   { id: 'contact', label: 'contact' },
 ];
