@@ -4,7 +4,14 @@ import { useState, useEffect } from 'react';
 import { useTranslations } from 'next-intl';
 import { useLocale } from 'next-intl';
 
-const sections = ['services', 'work', 'local', 'pricing', 'about', 'contact'];
+const sections: Array<{ id: string; label: string }> = [
+  { id: 'services', label: 'services' },
+  { id: 'work', label: 'work' },
+  { id: 'local', label: 'local' },
+  { id: 'pricing', label: 'packages' },
+  { id: 'about', label: 'about' },
+  { id: 'contact', label: 'contact' },
+];
 
 export default function Nav() {
   const t = useTranslations('nav');
@@ -31,7 +38,7 @@ export default function Nav() {
       { rootMargin: '-50% 0px -50% 0px' }
     );
 
-    sections.forEach((id) => {
+    sections.forEach(({ id }) => {
       const el = document.getElementById(id);
       if (el) observer.observe(el);
     });
@@ -54,17 +61,17 @@ export default function Nav() {
           </a>
 
           <div className="hidden md:flex items-center gap-8">
-            {sections.map((section) => (
+            {sections.map(({ id, label }) => (
               <a
-                key={section}
-                href={`#${section}`}
+                key={id}
+                href={`#${id}`}
                 className={`text-sm font-medium transition-colors pb-1 ${
-                  activeSection === section
+                  activeSection === id
                     ? 'text-accent border-b-2 border-accent'
                     : 'text-warm-gray hover:text-charcoal'
                 }`}
               >
-                {t(section)}
+                {t(label)}
               </a>
             ))}
             <a
@@ -100,16 +107,16 @@ export default function Nav() {
 
         {isOpen && (
           <div className="md:hidden pb-4 border-t border-border pt-4">
-            {sections.map((section) => (
+            {sections.map(({ id, label }) => (
               <a
-                key={section}
-                href={`#${section}`}
+                key={id}
+                href={`#${id}`}
                 onClick={() => setIsOpen(false)}
                 className={`block py-2 text-sm font-medium ${
-                  activeSection === section ? 'text-accent' : 'text-warm-gray hover:text-charcoal'
+                  activeSection === id ? 'text-accent' : 'text-warm-gray hover:text-charcoal'
                 }`}
               >
-                {t(section)}
+                {t(label)}
               </a>
             ))}
           </div>

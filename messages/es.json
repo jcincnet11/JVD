@@ -3,13 +3,13 @@
     "services": "Servicios",
     "work": "Proyectos",
     "local": "Local",
-    "pricing": "Precios",
+    "packages": "Paquetes",
     "about": "Nosotros",
     "contact": "Contacto"
   },
   "hero": {
-    "headline": "Tu negocio merece un sitio web que realmente funcione.",
-    "subheadline": "Construyo sitios web rapidos, hermosos y bilingues para negocios en Puerto Rico y marcas en crecimiento — impulsados por IA, hechos para durar.",
+    "headline": "Sitios web que trabajan mientras duermes.",
+    "subhead": "Rápidos, bilingües y construidos para negocios en Puerto Rico listos para crecer.",
     "cta_primary": "Ver nuestros servicios",
     "cta_secondary": "Ver nuestro trabajo"
   },

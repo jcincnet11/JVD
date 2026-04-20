@@ -3,13 +3,13 @@
     "services": "Services",
     "work": "Work",
     "local": "Local",
-    "pricing": "Pricing",
+    "packages": "Packages",
     "about": "About",
     "contact": "Contact"
   },
   "hero": {
-    "headline": "Your business deserves a website that actually works.",
-    "subheadline": "I build fast, beautiful, bilingual websites for Puerto Rico businesses and growing brands — powered by AI, built to last.",
+    "headline": "Websites that work while you sleep.",
+    "subhead": "Fast, bilingual, and built for Puerto Rico businesses ready to grow.",
     "cta_primary": "See our services",
     "cta_secondary": "View our work"
   },

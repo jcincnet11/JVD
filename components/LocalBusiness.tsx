@@ -27,7 +27,7 @@ export default function LocalBusiness() {
           {venueKeys.map((key) => (
             <ScrollReveal key={key}>
               <div className="bg-cream border border-border rounded-xl p-8 hover:border-accent hover:-translate-y-0.5 transition-all duration-300 h-full">
-                <span className="text-3xl" role="img" aria-label={t(`venues.${key}.name`)}>
+                <span className="text-3xl" aria-hidden="true">
                   {t(`venues.${key}.icon`)}
                 </span>
                 <h3 className="font-serif text-xl font-bold text-charcoal mt-3">
