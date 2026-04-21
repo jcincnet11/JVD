@@ -40,13 +40,11 @@ export default function AccessibilitySection() {
             <ScrollReveal key={key}>
               <PricingTierCard
                 name={t(`${key}.name`)}
-                price={t(`${key}.price`)}
                 tagline={t(`${key}.tagline`)}
                 features={t.raw(`${key}.features`) as string[]}
                 ctaLabel={t(`${key}.cta`)}
                 ctaHref={ctaHref}
                 featured={i === 1}
-                featuredLabel={i === 1 ? t('mostPopular') : undefined}
               />
             </ScrollReveal>
           ))}
