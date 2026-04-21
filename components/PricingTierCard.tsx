@@ -1,6 +1,6 @@
 type Props = {
   name: string;
-  price: string;
+  price?: string;
   tagline: string;
   features: string[];
   ctaLabel: string;
@@ -32,9 +32,11 @@ export default function PricingTierCard({
       )}
 
       <h3 className="font-serif text-xl font-bold text-charcoal">{name}</h3>
-      <p className="mt-3 font-serif text-3xl sm:text-4xl font-bold text-charcoal">
-        {price}
-      </p>
+      {price && (
+        <p className="mt-3 font-serif text-3xl sm:text-4xl font-bold text-charcoal">
+          {price}
+        </p>
+      )}
       <p className="mt-3 text-warm-gray leading-relaxed">{tagline}</p>
 
       <ul className="mt-6 space-y-3 flex-1">
