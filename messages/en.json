@@ -236,7 +236,6 @@
     "bottomCtaButton": "Get free scan →",
     "tier1": {
       "name": "Audit Report",
-      "price": "From $750",
       "tagline": "Know exactly what's broken and why.",
       "features": [
         "Full WCAG 2.1 AA audit of up to 5 pages",
@@ -250,7 +249,6 @@
     },
     "tier2": {
       "name": "Audit + Remediation",
-      "price": "$1,800",
       "tagline": "We find the issues. Then we fix them.",
       "features": [
         "Everything in Audit Report",
@@ -264,7 +262,6 @@
     },
     "tier3": {
       "name": "Compliance Partnership",
-      "price": "$400/mo",
       "tagline": "Ongoing compliance for sites that actually change.",
       "features": [
         "Monthly automated scan",

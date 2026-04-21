@@ -236,7 +236,6 @@
     "bottomCtaButton": "Obtener escaneo gratis →",
     "tier1": {
       "name": "Reporte de Auditoría",
-      "price": "Desde $750",
       "tagline": "Sabe exactamente qué está roto y por qué.",
       "features": [
         "Auditoría completa WCAG 2.1 AA de hasta 5 páginas",
@@ -250,7 +249,6 @@
     },
     "tier2": {
       "name": "Auditoría + Remediación",
-      "price": "$1,800",
       "tagline": "Encontramos los problemas. Y los resolvemos.",
       "features": [
         "Todo lo del Reporte de Auditoría",
@@ -264,7 +262,6 @@
     },
     "tier3": {
       "name": "Alianza de Cumplimiento",
-      "price": "$400/mes",
       "tagline": "Cumplimiento continuo para sitios que realmente cambian.",
       "features": [
         "Escaneo automatizado mensual",
