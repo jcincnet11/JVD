@@ -28,7 +28,7 @@ export default function Hero() {
         <div className="mt-10 flex flex-col sm:flex-row items-center justify-center gap-4">
           <a
             href="#services"
-            className="inline-flex items-center px-8 py-3 bg-accent text-white font-medium rounded-lg hover:bg-accent-dark transition-colors focus:outline-none focus:ring-2 focus:ring-accent focus:ring-offset-2"
+            className="inline-flex items-center px-8 py-3 bg-accent-dark text-white font-medium rounded-lg hover:bg-accent transition-colors focus:outline-none focus:ring-2 focus:ring-accent focus:ring-offset-2"
           >
             {t('cta_primary')}
           </a>

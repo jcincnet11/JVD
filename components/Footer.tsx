@@ -17,7 +17,7 @@ export default function Footer() {
             GitHub
           </a>
         </div>
-        <p className="text-center text-cream/40 text-xs mt-6">{t('copyright')}</p>
+        <p className="text-center text-cream/70 text-xs mt-6">{t('copyright')}</p>
       </div>
     </footer>
   );
