@@ -1,7 +1,12 @@
 import type { Config } from 'tailwindcss';
+import preset from '@jvd/ui/theme/tailwind-preset';
 
 const config: Config = {
-  content: ['./app/**/*.{ts,tsx}', './components/**/*.{ts,tsx}'],
+  presets: [preset],
+  content: [
+    './src/**/*.{ts,tsx}',
+    './node_modules/@jvd/ui/dist/**/*.{js,mjs,cjs}',
+  ],
   theme: {
     extend: {
       colors: {

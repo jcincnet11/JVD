@@ -32,40 +32,55 @@ Complex commands that need real bash logic live in `scripts/` and are called fro
 ## Project Structure
 
 ```
-app/
-  layout.tsx              # Root passthrough layout
-  globals.css             # Tailwind imports + smooth scroll
-  [locale]/
-    layout.tsx            # Locale layout (fonts, i18n provider)
-    page.tsx              # Single-page composition of all sections
-components/               # One component per section
-  Nav.tsx                 # Sticky nav, mobile hamburger, active section tracking
-  Hero.tsx                # Headline, subheadline, CTAs
-  TrustBar.tsx            # 4 outcome-focused stats
-  Services.tsx            # 4 service cards (2x2 grid)
-  Work.tsx                # 4 project cards with challenge blocks
-  Pricing.tsx             # "How we work" — outcome paragraphs + covered lists
-  About.tsx               # Bio + stats
-  Contact.tsx             # Form (mailto action)
-  Footer.tsx              # Location, GitHub, copyright
-  ScrollReveal.tsx        # IntersectionObserver fade-in wrapper
-i18n/
-  request.ts              # Server-side i18n config
-messages/
-  en.json                 # English translations
-  es.json                 # Spanish translations
-middleware.ts             # Locale routing middleware
-docs/                     # Living documentation
-Makefile                  # Project operations — single entry point
-scripts/                  # Complex build/deploy scripts
-TODO.md                   # Task tracking
+src/
+  app/
+    layout.tsx              # Root passthrough layout
+    globals.css             # Tailwind imports + smooth scroll
+    [locale]/
+      layout.tsx            # Locale layout (fonts, i18n provider, ThemeProvider)
+      page.tsx              # Single-page composition of all sections
+  components/               # One component per section (domain-specific only)
+    Nav.tsx                 # Sticky nav, mobile hamburger, active section tracking
+    Hero.tsx                # Headline, subheadline, CTAs
+    TrustBar.tsx            # 4 outcome-focused stats
+    Services.tsx            # 4 service cards (2x2 grid)
+    Work.tsx                # 4 project cards with challenge blocks
+    Pricing.tsx             # "How we work" — outcome paragraphs + covered lists
+    About.tsx               # Bio + stats
+    Contact.tsx             # Formspree form (validation, honeypot, analytics)
+    Footer.tsx              # Location, GitHub, copyright
+    ScrollReveal.tsx        # IntersectionObserver fade-in wrapper
+  i18n/
+    request.ts              # Server-side i18n config
+  messages/
+    en.json                 # English translations
+    es.json                 # Spanish translations
+  lib/                      # site URL, helpers
+middleware.ts               # Locale routing middleware (must stay at root)
+public/                     # Static assets
+__tests__/                  # Vitest suite
+e2e/                        # Playwright suite
+docs/                       # Living documentation
+Makefile                    # Project operations — single entry point
+scripts/                    # Complex build/deploy scripts
+TODO.md                     # Task tracking
 .claude/
-  skills/                 # Claude skills
+  skills/                   # Claude skills
 ```
 
 ## Architecture
 
-Single-page scrolling site. All sections are React components composed in `app/[locale]/page.tsx`. The `[locale]` dynamic segment powers bilingual routing — `middleware.ts` redirects `/` to `/en`. All translatable copy lives in `messages/*.json`. Client components (Nav, Contact, ScrollReveal) use hooks; everything else is server-rendered.
+Single-page scrolling site. All sections are React components composed in `src/app/[locale]/page.tsx`. The `[locale]` dynamic segment powers bilingual routing — `middleware.ts` redirects `/` to `/en`. All translatable copy lives in `src/messages/*.json`. Client components (Nav, Contact, ScrollReveal) use hooks; everything else is server-rendered.
+
+## Shared UI: `@jvd/ui`
+
+This project consumes `@jvd/ui` (private package, installed via `github:jvincentdigital/jvd-ui#main`). Adoption today is structural only:
+
+- Tailwind config extends `@jvd/ui/theme/tailwind-preset` (provides shadcn-compatible color shape + `tailwindcss-animate`); JVD's `cream`/`charcoal`/`accent` palette stays in `extend.colors`.
+- Layout wraps tree with `<ThemeProvider>` from `@jvd/ui/theme` (no token overrides — JVD palette is wired via Tailwind, not CSS vars).
+- `pnpm.onlyBuiltDependencies` is set to allow `@jvd/ui`'s `prepare` script to run (pnpm 10 hardening).
+
+**Domain-specific components stay local** (Nav, Hero, Footer, Contact, About, Services, Work, Pricing, CaseStudyHero, CaseStudySection, AccessibilitySection, LocalBusiness, TrustBar, ScrollReveal, PricingTierCard). They will move into `@jvd/ui/sections` only once that package's section APIs grow feature parity (e.g., `ContactForm` needs custom field schema + honeypot + analytics hooks before it can replace this Contact).
 
 ## Key Workflows
 
