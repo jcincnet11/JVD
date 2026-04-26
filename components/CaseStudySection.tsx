@@ -6,9 +6,7 @@ type Props = {
 export default function CaseStudySection({ heading, children }: Props) {
   return (
     <section>
-      <h2 className="font-serif text-2xl sm:text-3xl font-bold text-charcoal mb-4">
-        {heading}
-      </h2>
+      <h2 className='mb-4 font-serif text-2xl font-bold text-charcoal sm:text-3xl'>{heading}</h2>
       {children}
     </section>
   );

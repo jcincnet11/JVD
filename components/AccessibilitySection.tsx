@@ -10,32 +10,30 @@ export default function AccessibilitySection() {
   const ctaHref = `/${locale}?service=accessibility#contact`;
 
   return (
-    <section id="accessibility" className="bg-white py-20 px-4 border-t border-border">
-      <div className="max-w-6xl mx-auto">
+    <section id='accessibility' className='border-t border-border bg-white px-4 py-20'>
+      <div className='mx-auto max-w-6xl'>
         <ScrollReveal>
-          <div className="text-center mb-10">
-            <p className="text-xs font-medium text-accent uppercase tracking-widest mb-4">
+          <div className='mb-10 text-center'>
+            <p className='mb-4 text-xs font-medium uppercase tracking-widest text-accent'>
               {t('label')}
             </p>
-            <h2 className="font-serif text-3xl sm:text-4xl font-bold text-charcoal max-w-3xl mx-auto">
+            <h2 className='mx-auto max-w-3xl font-serif text-3xl font-bold text-charcoal sm:text-4xl'>
               {t('heading')}
             </h2>
-            <p className="mt-4 text-warm-gray text-lg max-w-2xl mx-auto leading-relaxed">
+            <p className='mx-auto mt-4 max-w-2xl text-lg leading-relaxed text-warm-gray'>
               {t('subheading')}
             </p>
-            <p className="mt-4 text-warm-gray max-w-2xl mx-auto leading-relaxed">
-              {t('intro')}
-            </p>
+            <p className='mx-auto mt-4 max-w-2xl leading-relaxed text-warm-gray'>{t('intro')}</p>
           </div>
         </ScrollReveal>
 
         <ScrollReveal>
-          <p className="text-sm text-warm-gray text-center max-w-3xl mx-auto mb-12 italic">
+          <p className='mx-auto mb-12 max-w-3xl text-center text-sm italic text-warm-gray'>
             {t('trustSignal')}
           </p>
         </ScrollReveal>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 items-stretch">
+        <div className='grid grid-cols-1 items-stretch gap-6 md:grid-cols-3'>
           {tierKeys.map((key, i) => (
             <ScrollReveal key={key}>
               <PricingTierCard
@@ -51,14 +49,14 @@ export default function AccessibilitySection() {
         </div>
 
         <ScrollReveal>
-          <div className="mt-14 rounded-xl bg-cream border border-border text-center py-10 px-6">
-            <p className="font-serif text-xl sm:text-2xl font-bold text-charcoal">
+          <div className='mt-14 rounded-xl border border-border bg-cream px-6 py-10 text-center'>
+            <p className='font-serif text-xl font-bold text-charcoal sm:text-2xl'>
               {t('bottomCtaHeading')}
             </p>
-            <p className="mt-2 text-warm-gray">{t('bottomCtaSubheading')}</p>
+            <p className='mt-2 text-warm-gray'>{t('bottomCtaSubheading')}</p>
             <a
               href={ctaHref}
-              className="inline-block mt-6 px-8 py-3 bg-accent text-white font-medium rounded-lg hover:bg-accent-dark transition-colors focus:outline-none focus:ring-2 focus:ring-accent focus:ring-offset-2"
+              className='mt-6 inline-block rounded-lg bg-accent px-8 py-3 font-medium text-white transition-colors hover:bg-accent-dark focus:outline-none focus:ring-2 focus:ring-accent focus:ring-offset-2'
             >
               {t('bottomCtaButton')}
             </a>

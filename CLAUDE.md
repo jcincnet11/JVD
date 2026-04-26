@@ -89,10 +89,12 @@ The `docs/` folder is the single source of truth for institutional knowledge.
 `.claude/skills/` teaches Claude project-specific conventions and provides reusable workflows as slash commands. See `docs/vibestack.md` for how to create new ones.
 
 **Reference skills** (auto-loaded as context):
+
 - `cli-first` — Use CLI tools and `.env*` files for third-party services
 - `lsp` — Use language servers for type checking, references, and code navigation
 
 **Task skills** (invoked via `/command`):
+
 - `/vibestack` — Set up VibeStack conventions for an existing project (CLAUDE.md, Makefile, docs, TODO.md)
 - `/docs` — Capture conversation learnings into docs and clean up stale content
 - `/todo` — Work through TODO.md tasks sequentially (`/todo populate` to re-analyze the codebase and seed the next batch of tasks)

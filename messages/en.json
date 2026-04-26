@@ -274,6 +274,7 @@
     }
   },
   "caseStudy": {
+    "breadcrumbHome": "Home",
     "breadcrumbWork": "Work",
     "sectionBrief": "The brief",
     "sectionChallenge": "The challenge",

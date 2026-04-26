@@ -173,10 +173,16 @@
     "form": {
       "required_note": "Los campos marcados con * son obligatorios",
       "name": { "label": "Nombre", "error": "Por favor ingresa tu nombre" },
-      "email": { "label": "Correo electrónico", "error": "Por favor ingresa un correo electrónico válido" },
+      "email": {
+        "label": "Correo electrónico",
+        "error": "Por favor ingresa un correo electrónico válido"
+      },
       "business": { "label": "Nombre del negocio (opcional)" },
       "service": { "label": "Servicio de interés (opcional)" },
-      "message": { "label": "Mensaje", "error": "Por favor ingresa un mensaje (mínimo 10 caracteres)" },
+      "message": {
+        "label": "Mensaje",
+        "error": "Por favor ingresa un mensaje (mínimo 10 caracteres)"
+      },
       "submit": { "default": "Enviar mensaje →", "loading": "Enviando..." },
       "success": "Gracias — te contactaré en menos de 24 horas.",
       "generic_error": "Algo salió mal. Inténtalo de nuevo o escríbeme por WhatsApp."
@@ -274,6 +280,7 @@
     }
   },
   "caseStudy": {
+    "breadcrumbHome": "Inicio",
     "breadcrumbWork": "Proyectos",
     "sectionBrief": "El encargo",
     "sectionChallenge": "El reto",

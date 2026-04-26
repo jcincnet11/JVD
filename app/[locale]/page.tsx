@@ -14,13 +14,13 @@ export default function Home() {
   return (
     <>
       <a
-        href="#main-content"
-        className="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 focus:z-[60] focus:px-4 focus:py-2 focus:bg-accent focus:text-white focus:rounded-lg focus:outline-none"
+        href='#main-content'
+        className='sr-only focus:not-sr-only focus:absolute focus:left-4 focus:top-4 focus:z-[60] focus:rounded-lg focus:bg-accent focus:px-4 focus:py-2 focus:text-white focus:outline-none'
       >
         Skip to content
       </a>
       <Nav />
-      <main id="main-content">
+      <main id='main-content'>
         <Hero />
         <TrustBar />
         <Services />

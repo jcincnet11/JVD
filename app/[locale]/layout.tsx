@@ -5,6 +5,7 @@ import { getMessages } from 'next-intl/server';
 import { notFound } from 'next/navigation';
 import { Analytics } from '@vercel/analytics/react';
 import { SpeedInsights } from '@vercel/speed-insights/next';
+import { siteUrl } from '@/lib/site';
 import '../globals.css';
 
 const fraunces = Fraunces({
@@ -22,8 +23,6 @@ const jakarta = Plus_Jakarta_Sans({
 });
 
 const locales = ['en', 'es'];
-
-const siteUrl = 'https://john-vincent-digital.vercel.app';
 
 const meta: Record<string, { title: string; description: string }> = {
   en: {
@@ -48,6 +47,7 @@ export async function generateMetadata({
   const ogLocale = locale === 'es' ? 'es_ES' : 'en_US';
 
   return {
+    metadataBase: new URL(siteUrl),
     title: t.title,
     description: t.description,
     icons: {
@@ -98,25 +98,18 @@ export default async function LocaleLayout({
     url: siteUrl,
     email: 'iamjohnvdiaz@gmail.com',
     areaServed: 'Puerto Rico',
-    serviceType: [
-      'Web Design',
-      'E-Commerce Development',
-      'Brand Identity',
-      'Digital Strategy',
-    ],
+    serviceType: ['Web Design', 'E-Commerce Development', 'Brand Identity', 'Digital Strategy'],
     knowsLanguage: ['en', 'es'],
   };
 
   return (
     <html lang={locale} className={`${fraunces.variable} ${jakarta.variable}`}>
-      <body className="font-sans bg-cream text-charcoal antialiased">
+      <body className='bg-cream font-sans text-charcoal antialiased'>
         <script
-          type="application/ld+json"
+          type='application/ld+json'
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         />
-        <NextIntlClientProvider messages={messages}>
-          {children}
-        </NextIntlClientProvider>
+        <NextIntlClientProvider messages={messages}>{children}</NextIntlClientProvider>
         <Analytics />
         <SpeedInsights />
       </body>

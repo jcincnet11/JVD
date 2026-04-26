@@ -2,14 +2,21 @@
   "name": "john-vincent-digital",
   "version": "1.0.0",
   "private": true,
+  "engines": {
+    "node": ">=20"
+  },
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "test": "vitest run"
+    "test": "vitest run",
+    "test:e2e": "playwright test",
+    "format": "prettier --write .",
+    "format:check": "prettier --check ."
   },
   "dependencies": {
+    "@sentry/nextjs": "^10.49.0",
     "@vercel/analytics": "^2.0.1",
     "@vercel/speed-insights": "^2.0.0",
     "next": "^14.2.35",
@@ -18,13 +25,23 @@
     "react-dom": "^18.3.1"
   },
   "devDependencies": {
+    "@axe-core/playwright": "^4.11.2",
+    "@next/bundle-analyzer": "^16.2.4",
+    "@playwright/test": "^1.59.1",
+    "@testing-library/jest-dom": "^6.9.1",
+    "@testing-library/react": "^16.3.2",
+    "@testing-library/user-event": "^14.6.1",
     "@types/node": "^20.11.0",
     "@types/react": "^18.2.0",
     "@types/react-dom": "^18.2.0",
+    "@vitejs/plugin-react": "^6.0.1",
     "autoprefixer": "^10.4.17",
     "eslint": "^8.57.1",
     "eslint-config-next": "^14.2.35",
+    "jsdom": "^29.0.2",
     "postcss": "^8.4.33",
+    "prettier": "^3.8.3",
+    "prettier-plugin-tailwindcss": "^0.7.3",
     "tailwindcss": "^3.4.1",
     "typescript": "^5.3.3",
     "vitest": "^4.1.4"

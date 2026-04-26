@@ -13,6 +13,10 @@ run: ## Start dev server
 build: ## Build for production
 	npm run build
 
+.PHONY: analyze
+analyze: ## Build with bundle analyzer reports (writes .next/analyze/*.html)
+	ANALYZE=true npm run build
+
 .PHONY: start
 start: ## Start production server locally
 	npm run start
@@ -21,6 +25,14 @@ start: ## Start production server locally
 lint: ## Run Next.js linter
 	npm run lint
 
+.PHONY: format
+format: ## Format with Prettier
+	npm run format
+
+.PHONY: format-check
+format-check: ## Verify formatting with Prettier (read-only)
+	npm run format:check
+
 .PHONY: typecheck
 typecheck: ## Run TypeScript type checking
 	npx tsc --noEmit
@@ -28,8 +40,12 @@ typecheck: ## Run TypeScript type checking
 # ─── Testing ──────────────────────────────────────────────────
 
 .PHONY: test
-test: ## Run tests
+test: ## Run unit tests
 	npm test
+
+.PHONY: test-e2e
+test-e2e: ## Run Playwright end-to-end tests against a built site
+	npm run build && npm run test:e2e
 
 # ─── Deployment ───────────────────────────────────────────────
 
@@ -47,7 +63,7 @@ logs: ## View Vercel deployment logs
 
 .PHONY: status
 status: ## Show git and Vercel project status
-	@echo "=== Git ===" && git log --oneline -5 && echo "" && echo "=== Vercel ===" && vercel ls --limit 5
+	@echo "=== Git ===" && git log --oneline -5 && echo "" && echo "=== Vercel ===" && vercel ls 2>&1 | head -10
 
 # ─── Utilities ────────────────────────────────────────────────
 

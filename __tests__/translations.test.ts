@@ -26,7 +26,9 @@ describe('Translation key coverage', () => {
 
   it('en.json has no empty string values', () => {
     const emptyKeys = enKeys.filter((key) => {
-      const value = key.split('.').reduce((obj: unknown, k) => (obj as Record<string, unknown>)[k], en);
+      const value = key
+        .split('.')
+        .reduce((obj: unknown, k) => (obj as Record<string, unknown>)[k], en);
       return value === '';
     });
     expect(emptyKeys).toEqual([]);
@@ -34,7 +36,9 @@ describe('Translation key coverage', () => {
 
   it('es.json has no empty string values', () => {
     const emptyKeys = esKeys.filter((key) => {
-      const value = key.split('.').reduce((obj: unknown, k) => (obj as Record<string, unknown>)[k], es);
+      const value = key
+        .split('.')
+        .reduce((obj: unknown, k) => (obj as Record<string, unknown>)[k], es);
       return value === '';
     });
     expect(emptyKeys).toEqual([]);

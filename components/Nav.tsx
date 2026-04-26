@@ -44,7 +44,7 @@ export default function Nav() {
           }
         });
       },
-      { rootMargin: '-50% 0px -50% 0px' }
+      { rootMargin: '-50% 0px -50% 0px' },
     );
 
     sections.forEach(({ id }) => {
@@ -56,33 +56,32 @@ export default function Nav() {
   }, [isHome]);
 
   const otherLocale = locale === 'en' ? 'es' : 'en';
-  const otherPath =
-    pathname.replace(/^\/(en|es)/, `/${otherLocale}`) || `/${otherLocale}`;
+  const otherPath = pathname.replace(/^\/(en|es)/, `/${otherLocale}`) || `/${otherLocale}`;
   const hrefFor = (id: string) => (isHome ? `#${id}` : `/${locale}#${id}`);
 
   return (
     <nav
       className={`sticky top-0 z-50 bg-cream/95 backdrop-blur-sm transition-shadow ${
-        scrolled ? 'shadow-sm border-b border-border' : ''
+        scrolled ? 'border-b border-border shadow-sm' : ''
       }`}
     >
-      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between h-16">
+      <div className='mx-auto max-w-6xl px-4 sm:px-6 lg:px-8'>
+        <div className='flex h-16 items-center justify-between'>
           <Link
             href={`/${locale}`}
-            className="font-serif text-xl font-bold text-charcoal focus:outline-none focus:ring-2 focus:ring-accent focus:ring-offset-2 rounded"
+            className='rounded font-serif text-xl font-bold text-charcoal focus:outline-none focus:ring-2 focus:ring-accent focus:ring-offset-2'
           >
             John Vincent Digital
           </Link>
 
-          <div className="hidden md:flex items-center gap-8">
+          <div className='hidden items-center gap-8 md:flex'>
             {sections.map(({ id, label }) => (
               <a
                 key={id}
                 href={hrefFor(id)}
-                className={`text-sm font-medium transition-colors pb-1 ${
+                className={`pb-1 text-sm font-medium transition-colors ${
                   activeSection === id
-                    ? 'text-accent border-b-2 border-accent'
+                    ? 'border-b-2 border-accent text-accent'
                     : 'text-warm-gray hover:text-charcoal'
                 }`}
               >
@@ -91,30 +90,40 @@ export default function Nav() {
             ))}
             <Link
               href={otherPath}
-              className="text-sm font-medium px-3 py-1 rounded border border-border text-warm-gray hover:text-charcoal hover:border-charcoal transition-colors"
+              className='rounded border border-border px-3 py-1 text-sm font-medium text-warm-gray transition-colors hover:border-charcoal hover:text-charcoal'
             >
               {locale === 'en' ? 'ES' : 'EN'}
             </Link>
           </div>
 
-          <div className="md:hidden flex items-center gap-3">
+          <div className='flex items-center gap-3 md:hidden'>
             <Link
               href={otherPath}
-              className="text-sm font-medium px-3 py-1 rounded border border-border text-warm-gray"
+              className='rounded border border-border px-3 py-1 text-sm font-medium text-warm-gray'
             >
               {locale === 'en' ? 'ES' : 'EN'}
             </Link>
             <button
               onClick={() => setIsOpen(!isOpen)}
-              className="text-charcoal p-2 focus:outline-none focus:ring-2 focus:ring-accent rounded"
-              aria-label="Toggle menu"
+              className='rounded p-2 text-charcoal focus:outline-none focus:ring-2 focus:ring-accent'
+              aria-label='Toggle menu'
               aria-expanded={isOpen}
             >
-              <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <svg className='h-6 w-6' fill='none' stroke='currentColor' viewBox='0 0 24 24'>
                 {isOpen ? (
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+                  <path
+                    strokeLinecap='round'
+                    strokeLinejoin='round'
+                    strokeWidth={2}
+                    d='M6 18L18 6M6 6l12 12'
+                  />
                 ) : (
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
+                  <path
+                    strokeLinecap='round'
+                    strokeLinejoin='round'
+                    strokeWidth={2}
+                    d='M4 6h16M4 12h16M4 18h16'
+                  />
                 )}
               </svg>
             </button>
@@ -122,7 +131,7 @@ export default function Nav() {
         </div>
 
         {isOpen && (
-          <div className="md:hidden pb-4 border-t border-border pt-4">
+          <div className='border-t border-border pb-4 pt-4 md:hidden'>
             {sections.map(({ id, label }) => (
               <a
                 key={id}

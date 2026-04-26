@@ -30,18 +30,18 @@ Translation files are flat JSON with nested keys per section. All user-facing te
 
 All components are section-level — one component per visible section on the page. They're composed top-to-bottom in `page.tsx`:
 
-| Component | Type | Purpose |
-|-----------|------|---------|
-| Nav | Client | Sticky nav, scroll tracking, mobile menu |
-| Hero | Server | Headline, CTAs |
-| TrustBar | Server | Stats row |
-| Services | Server | 4 service cards |
-| Work | Server | 4 project showcase cards |
-| Pricing | Server | "How we work" engagement cards |
-| About | Server | Bio + stats |
-| Contact | Client | Form with mailto action |
-| Footer | Server | Links, copyright |
-| ScrollReveal | Client | Reusable IntersectionObserver wrapper |
+| Component    | Type   | Purpose                                  |
+| ------------ | ------ | ---------------------------------------- |
+| Nav          | Client | Sticky nav, scroll tracking, mobile menu |
+| Hero         | Server | Headline, CTAs                           |
+| TrustBar     | Server | Stats row                                |
+| Services     | Server | 4 service cards                          |
+| Work         | Server | 4 project showcase cards                 |
+| Pricing      | Server | "How we work" engagement cards           |
+| About        | Server | Bio + stats                              |
+| Contact      | Client | Form with mailto action                  |
+| Footer       | Server | Links, copyright                         |
+| ScrollReveal | Client | Reusable IntersectionObserver wrapper    |
 
 Client components are only used when hooks or browser APIs are needed (scroll tracking, form state, IntersectionObserver).
 

@@ -1,14 +1,13 @@
-name: CI
+name: Lighthouse
 
 on:
-  push:
-    branches: [main]
   pull_request:
     branches: [main]
 
 jobs:
-  build:
+  lighthouse:
     runs-on: ubuntu-latest
+    timeout-minutes: 15
 
     steps:
       - uses: actions/checkout@v4
@@ -20,12 +19,11 @@ jobs:
 
       - run: npm ci
 
-      - run: npm run format:check
-
-      - run: npm run lint
-
-      - run: npx tsc --noEmit
-
-      - run: npm test
-
       - run: npm run build
+
+      - name: Run Lighthouse CI
+        run: |
+          npm install -g @lhci/cli@0.14.x
+          lhci autorun
+        env:
+          LHCI_GITHUB_APP_TOKEN: ${{ secrets.LHCI_GITHUB_APP_TOKEN }}
