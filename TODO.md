@@ -4,18 +4,18 @@ AGENTS: When prompted, complete tasks from the list below. Before starting work,
 
 ## Backlog
 
-- [x] Add security headers (CSP, X-Frame-Options, Referrer-Policy, Permissions-Policy, X-Content-Type-Options) via `headers()` in `next.config.mjs` — this is a public marketing site with no current header hardening
-- [x] Verify the Formspree endpoint — old endpoint `https://formspree.io/f/johnvincentdigital@gmail.com` was 404; replaced with `xrerbdlw` (verified `ok:true`) in `components/Contact.tsx`, configurable via `NEXT_PUBLIC_FORMSPREE_ID`
-- [x] Move the hardcoded `siteUrl` constant out of `app/[locale]/layout.tsx`, `app/[locale]/work/[slug]/page.tsx`, and `app/sitemap.ts` into a single `lib/site.ts` or `NEXT_PUBLIC_SITE_URL` env var — currently duplicated in 3 places
-- [x] Run `npm test` in CI — `.github/workflows/ci.yml` runs lint + typecheck + build but skips the existing Vitest suite
-- [x] Add `.env.example` documenting `NEXT_PUBLIC_SENTRY_DSN`, `SENTRY_AUTH_TOKEN`, and any new env vars introduced by other backlog items
-- [x] Pin Node version with a `.nvmrc` file (CI uses 20 — match it locally)
-- [x] Add component tests for `components/Contact.tsx` covering validation (name < 2 chars, invalid email, message < 10 chars), honeypot field, and submit success/error states — currently zero coverage of business logic
-- [x] Add a Playwright smoke test suite — `/en` and `/es` render, nav anchors scroll to sections, a case study page (`/en/work/imperfect-gaming`) loads without errors
-- [x] Add automated axe-core a11y check in CI against the built site — the site advertises WCAG AA compliance, so drift would undermine the pitch (consider reusing `jvd-a11y-scanner`)
-- [x] Add Lighthouse CI with a performance/SEO/a11y budget enforced on PRs (`.github/workflows/lighthouse.yml`)
-- [x] Add an OpenGraph image generator for case study pages — `app/[locale]/work/[slug]/opengraph-image.tsx` (locale root already has one; case study share previews currently fall back to default)
-- [x] Track contact form submissions as Vercel Analytics custom events — fire on success and error in `components/Contact.tsx` to measure conversion
-- [x] Add Breadcrumb JSON-LD on case study pages (`Home > Work > [Case Study]`) for richer SERP results
-- [x] Add `@next/bundle-analyzer` and document a size budget — middleware is 101 kB and shared JS is 198 kB; track regressions via PR comments or CI check
-- [x] Add Prettier with a format check step in CI to prevent style drift across contributors/agents
+- [~] **Smoke-test the live contact form end-to-end now that the Formspree endpoint is fixed** — sent a verification submission to `formspree.io/f/xrerbdlw` with the live `Referer`/`Origin` headers, returned `ok:true`. Awaiting owner confirmation that the email arrived in `johnvincentdigital@gmail.com`.
+- [~] **Sweep the rest of the site for `text-accent` on light backgrounds.** axe only caught violations rendered with full opacity at scan time; ScrollReveal hides most sections behind `opacity-0` until intersection, so a11y/Lighthouse runs miss them. Audit `AccessibilitySection.tsx:17`, `LocalBusiness.tsx:14`, `Pricing.tsx:42`, `TrustBar.tsx:20`, etc., and switch small/normal text to `text-accent-dark` where contrast fails.
+- [ ] **Make e2e a11y tests scan post-scroll content too.** Either auto-scroll the page in `e2e/a11y.spec.ts` before `analyze()`, or stub `prefers-reduced-motion: reduce` so ScrollReveal short-circuits to `opacity-100`. Today the suite is only honest about the above-the-fold layer.
+- [ ] **Tighten the CSP** — current policy uses `'unsafe-inline'` and `'unsafe-eval'` for scripts to keep Next.js + JSON-LD inline scripts working. Move JSON-LD blocks to nonce-based scripts (Next.js 14 supports `nonce` via middleware) so we can drop `'unsafe-inline'`.
+- [ ] **Add a contact-form rate limit / honeypot reinforcement.** Formspree handles spam reasonably, but the form is reachable from any origin and can be hammered. Add a per-session debounce or Cloudflare Turnstile to back the existing honeypot.
+- [ ] **Hide the deploy URL from social previews and search.** `siteUrl` defaults to `john-vincent-digital.vercel.app` — once the apex domain is configured, switch the default in `lib/site.ts`, set `NEXT_PUBLIC_SITE_URL` in Vercel, and add a `noindex` to all `*.vercel.app` deploys via response headers in `next.config.mjs`.
+- [ ] **Hard-code the Sentry DSN behavior** — `instrumentation-client.ts` and `sentry.{server,edge}.config.ts` read `NEXT_PUBLIC_SENTRY_DSN`. Document the expected projects/env vars in `docs/observability.md` and confirm DSN is actually set in Vercel (otherwise Sentry is silently disabled).
+- [ ] **Add visual regression coverage** for the home page hero and case study layouts using Playwright's `toHaveScreenshot()`. Five smoke tests verify navigation works; nothing protects against accidental layout regressions.
+- [ ] **Replace the placeholder hero block on case study pages** (`CaseStudyHero.tsx:39-55`) with real screenshots. Right now every study renders a tinted box with a single colored bar — the strongest case-study selling point (visible work) is missing.
+- [ ] **Add an OpenGraph image debug route** — make `/_og` (or similar) render the case-study OG image so we can preview without Twitter/iMessage scraping. Useful before pushing changes to OG layout.
+- [ ] **Wire `LHCI_GITHUB_APP_TOKEN`** in repo secrets so Lighthouse comments on PRs. Workflow is committed but the token isn't set, so PR comments will be skipped silently.
+- [ ] **Add a 404 a11y test.** `e2e/a11y.spec.ts` scans 3 pages but not `/en/work/does-not-exist` or `/en/totally-fake`. The not-found page has its own copy and styling and should be covered.
+- [ ] **Capture Web Vitals in Sentry** — `@sentry/nextjs` supports it via `Sentry.replayIntegration` plus `BrowserTracing`. Add `tracesSampleRate` and integrations so Core Web Vitals show up alongside JS errors instead of just in Vercel Speed Insights.
+- [ ] **Document a release runbook in `docs/`** — what to verify before merging to main (build + tests + e2e + manual contact form ping), how Vercel auto-deploys from main, how to roll back via `vercel rollback`, and where to watch deploy logs.
+- [ ] **Audit `messages/{en,es}.json` for the now-unused `breadcrumb*` and other orphaned keys.** Translation parity is enforced, but there's no check for keys that no component actually reads. A `vitest` test that imports each component and asserts every translation key is referenced would catch dead copy.
