@@ -2,6 +2,32 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+  :root {
+    /* JVD palette mapped into the @jvd/ui shadcn token system */
+    --background: 36 38% 93%;        /* cream     #F5F0E8 */
+    --foreground: 0 0% 10%;          /* charcoal  #1A1A1A */
+    --muted: 36 25% 88%;             /* sand-cream */
+    --muted-foreground: 28 6% 39%;   /* warm-gray #6B6560 */
+    --border: 36 25% 84%;            /* border    #E0D9CF */
+    --input: 36 25% 84%;
+    --ring: 155 100% 33%;            /* accent    #00A86B */
+    --primary: 155 100% 33%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 36 25% 88%;
+    --secondary-foreground: 0 0% 10%;
+    --accent: 155 100% 33%;
+    --accent-foreground: 0 0% 100%;
+    --destructive: 0 72% 51%;
+    --destructive-foreground: 0 0% 100%;
+    --card: 36 38% 93%;
+    --card-foreground: 0 0% 10%;
+    --popover: 36 38% 93%;
+    --popover-foreground: 0 0% 10%;
+    --radius: 0.5rem;
+  }
+}
+
 html {
   scroll-behavior: smooth;
 }

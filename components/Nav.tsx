@@ -1,152 +1,62 @@
 'use client';
 
-import { useState, useEffect } from 'react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { useTranslations, useLocale } from 'next-intl';
+import { Nav as UiNav, type NavLinkComponent } from '@jvd/ui/sections';
 
-const sections: Array<{ id: string; label: string }> = [
-  { id: 'services', label: 'services' },
-  { id: 'work', label: 'work' },
-  { id: 'local', label: 'local' },
-  { id: 'pricing', label: 'packages' },
-  { id: 'accessibility', label: 'accessibility' },
-  { id: 'about', label: 'about' },
-  { id: 'contact', label: 'contact' },
-];
+const sectionIds = [
+  'services',
+  'work',
+  'local',
+  'pricing',
+  'accessibility',
+  'about',
+  'contact',
+] as const;
+
+const labelKeyById: Record<(typeof sectionIds)[number], string> = {
+  services: 'services',
+  work: 'work',
+  local: 'local',
+  pricing: 'packages',
+  accessibility: 'accessibility',
+  about: 'about',
+  contact: 'contact',
+};
+
+const NextLink: NavLinkComponent = ({ href, className, children, onClick }) => (
+  <Link href={href} className={className} onClick={onClick}>
+    {children}
+  </Link>
+);
 
 export default function Nav() {
   const t = useTranslations('nav');
   const locale = useLocale();
   const pathname = usePathname();
-  const [isOpen, setIsOpen] = useState(false);
-  const [activeSection, setActiveSection] = useState('');
-  const [scrolled, setScrolled] = useState(false);
 
   const isHome = pathname === `/${locale}` || pathname === `/${locale}/`;
-
-  useEffect(() => {
-    const handleScroll = () => setScrolled(window.scrollY > 10);
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
-  }, []);
-
-  useEffect(() => {
-    if (!isHome) {
-      setActiveSection('');
-      return;
-    }
-    const observer = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            setActiveSection(entry.target.id);
-          }
-        });
-      },
-      { rootMargin: '-50% 0px -50% 0px' },
-    );
-
-    sections.forEach(({ id }) => {
-      const el = document.getElementById(id);
-      if (el) observer.observe(el);
-    });
-
-    return () => observer.disconnect();
-  }, [isHome]);
-
   const otherLocale = locale === 'en' ? 'es' : 'en';
-  const otherPath = pathname.replace(/^\/(en|es)/, `/${otherLocale}`) || `/${otherLocale}`;
+  const otherPath =
+    pathname.replace(/^\/(en|es)/, `/${otherLocale}`) || `/${otherLocale}`;
   const hrefFor = (id: string) => (isHome ? `#${id}` : `/${locale}#${id}`);
 
   return (
-    <nav
-      className={`sticky top-0 z-50 bg-cream/95 backdrop-blur-sm transition-shadow ${
-        scrolled ? 'border-b border-border shadow-sm' : ''
-      }`}
-    >
-      <div className='mx-auto max-w-6xl px-4 sm:px-6 lg:px-8'>
-        <div className='flex h-16 items-center justify-between'>
-          <Link
-            href={`/${locale}`}
-            className='rounded font-serif text-xl font-bold text-charcoal focus:outline-none focus:ring-2 focus:ring-accent focus:ring-offset-2'
-          >
-            John Vincent Digital
-          </Link>
-
-          <div className='hidden items-center gap-8 md:flex'>
-            {sections.map(({ id, label }) => (
-              <a
-                key={id}
-                href={hrefFor(id)}
-                className={`pb-1 text-sm font-medium transition-colors ${
-                  activeSection === id
-                    ? 'border-b-2 border-accent text-accent'
-                    : 'text-warm-gray hover:text-charcoal'
-                }`}
-              >
-                {t(label)}
-              </a>
-            ))}
-            <Link
-              href={otherPath}
-              className='rounded border border-border px-3 py-1 text-sm font-medium text-warm-gray transition-colors hover:border-charcoal hover:text-charcoal'
-            >
-              {locale === 'en' ? 'ES' : 'EN'}
-            </Link>
-          </div>
-
-          <div className='flex items-center gap-3 md:hidden'>
-            <Link
-              href={otherPath}
-              className='rounded border border-border px-3 py-1 text-sm font-medium text-warm-gray'
-            >
-              {locale === 'en' ? 'ES' : 'EN'}
-            </Link>
-            <button
-              onClick={() => setIsOpen(!isOpen)}
-              className='rounded p-2 text-charcoal focus:outline-none focus:ring-2 focus:ring-accent'
-              aria-label='Toggle menu'
-              aria-expanded={isOpen}
-            >
-              <svg className='h-6 w-6' fill='none' stroke='currentColor' viewBox='0 0 24 24'>
-                {isOpen ? (
-                  <path
-                    strokeLinecap='round'
-                    strokeLinejoin='round'
-                    strokeWidth={2}
-                    d='M6 18L18 6M6 6l12 12'
-                  />
-                ) : (
-                  <path
-                    strokeLinecap='round'
-                    strokeLinejoin='round'
-                    strokeWidth={2}
-                    d='M4 6h16M4 12h16M4 18h16'
-                  />
-                )}
-              </svg>
-            </button>
-          </div>
-        </div>
-
-        {isOpen && (
-          <div className='border-t border-border pb-4 pt-4 md:hidden'>
-            {sections.map(({ id, label }) => (
-              <a
-                key={id}
-                href={hrefFor(id)}
-                onClick={() => setIsOpen(false)}
-                className={`block py-2 text-sm font-medium ${
-                  activeSection === id ? 'text-accent' : 'text-warm-gray hover:text-charcoal'
-                }`}
-              >
-                {t(label)}
-              </a>
-            ))}
-          </div>
-        )}
-      </div>
-    </nav>
+    <UiNav
+      brand="John Vincent Digital"
+      brandHref={`/${locale}`}
+      sections={sectionIds.map((id) => ({
+        id,
+        label: t(labelKeyById[id]),
+        href: hrefFor(id),
+      }))}
+      localeSwitcher={{
+        label: locale === 'en' ? 'ES' : 'EN',
+        href: otherPath,
+      }}
+      activeSectionId={isHome ? undefined : null}
+      LinkComponent={NextLink}
+    />
   );
 }
