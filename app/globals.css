@@ -11,8 +11,8 @@
     --muted-foreground: 28 6% 39%;   /* warm-gray #6B6560 */
     --border: 36 25% 84%;            /* border    #E0D9CF */
     --input: 36 25% 84%;
-    --ring: 155 100% 33%;            /* accent    #00A86B */
-    --primary: 155 100% 33%;
+    --ring: 155 100% 33%;            /* accent       #00A86B */
+    --primary: 158 100% 24%;         /* accent-dark  #007A4D — used for primary CTAs */
     --primary-foreground: 0 0% 100%;
     --secondary: 36 25% 88%;
     --secondary-foreground: 0 0% 10%;
